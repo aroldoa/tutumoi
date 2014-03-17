@@ -1,0 +1,38 @@
+body{background-color: #79b725;}
+.wrap{background-color:#fff;}
+.top-links{min-height: 40px; background-color: #f4f4f4; margin: 0px 0px 25px 0px;}
+.top-links p{margin: 12px 0px 0px 0px; font-size: 11px;}
+.top-links ul{display: inline; margin: 12px 0px 0px 0px; padding: 0px; float: right;}
+.top-links ul li{display: inline; margin: 0px 10px 0px 0px; padding: 0px;}
+.logoarea{padding: 0px 0px; min-height: 80px; text-align: center;}
+header{margin: 0px 0px 0px 0px; padding: 0px;}
+.menu{border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6; min-height: 40px; margin-bottom: 20px;}
+nav{text-align: center; padding: 12px 0px;}
+nav ul{display: inline; margin: 0px; padding: 0px;}
+nav ul li{display: inline; margin: 0px 25px; padding: 0px; color: #9b9b9b; font-size: 13px;}
+nav ul li a{text-decoration: none; color: #9b9b9b;}
+.slideshow{text-align: center;}
+form.search{margin: 8px 0px 0px 0px;}
+form.search input{border:none;border-left:1px solid #d8d8d8; background: none; width: 190px; height: 26px; text-indent: 15px; color: #9b9b9b;}
+.pre-footer{}
+footer{}
+.copyright{clear:both; padding: 20px 0px; background-color: #f8f8f8; min-height: 60px; color: #616161; font-size: 11px;}
+
+/*-----------------------------------------------------------
+	Start of Product Category Page
+----------------------------------------------------------*/
+.cat-banner{margin-bottom:10px;}
+.product-sorting{margin-bottom: 30px;}
+.product-listing{margin-bottom: 40px;}
+.product-listing img{margin-bottom: 15px;}
+.product-listing .prod-name{font-size: 16px; color: #934c9e; font-weight: lighter;}
+.product-listing .prod-price{font-size: 14px; color: #ec008c;}
+
+/*-----------------------------------------------------------
+	Start of Sidebar Area
+----------------------------------------------------------*/
+.widget{margin-bottom: 40px;}
+.widget h2{font-size: 16px; color: #ec008c; text-transform: uppercase; font-weight: lighter; border-bottom: 1px solid #ededed; line-height: 32px;}
+.widget ul{margin: 20px 0px 0px 30px; padding: 0px; display: block;}
+.widget ul li{margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; list-style-type: none; border-bottom: 1px solid #ededed;}
+.widget ul li a{color: #777777;}
