@@ -1,14 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-
-<head profile="http://gmpg.org/xfn/11">
-	
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-	
+
 	<?php if (is_search()) { ?>
-	   <meta name="robots" content="noindex, nofollow" /> 
+	   <meta name="robots" content="noindex, nofollow" />
 	<?php } ?>
 
 	<title>
@@ -31,21 +32,21 @@
 		         echo ' - page '. $paged; }
 		   ?>
 	</title>
-	
+
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-	
+
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
-	
+
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<?php wp_head(); ?>
-	
+
 </head>
 
 <body <?php body_class(); ?>>
-	
+
 	<div id="page-wrap">
 
 		<div id="header">

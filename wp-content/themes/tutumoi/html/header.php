@@ -11,7 +11,6 @@
     <title>Tutus, Designer Tutus, Fashion Tutus for Little Girls</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
      <link href="style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
