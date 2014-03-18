@@ -1,4 +1,4 @@
-tutumoi
-=======
+blanktheme
+==========
 
-Tutumoi Site
+Blank Starter WordPress Theme for Development

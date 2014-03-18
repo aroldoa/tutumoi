@@ -1,3 +1,14 @@
+/*
+Theme Name: Tutumoi
+Theme URI: http://aroldoalvarez.com
+Description: Custom E-Commerce Site built for Tutumoi.com
+Author: Primo Motif ad & design agency
+Author URI: http://www.primomotif.com
+Version: 1
+*/
+
+@media screen {
+
 body{background-color: #79b725;}
 .wrap{background-color:#fff;}
 .top-links{min-height: 40px; background-color: #f4f4f4; margin: 0px 0px 25px 0px;}
@@ -36,3 +47,32 @@ footer{}
 .widget ul{margin: 20px 0px 0px 30px; padding: 0px; display: block;}
 .widget ul li{margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; list-style-type: none; border-bottom: 1px solid #ededed;}
 .widget ul li a{color: #777777;}
+
+} /* END screen media */
+
+
+@media print {
+
+.do-not-print { display: none; }
+#comments { page-break-before: always; }
+
+body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: Garamond,"Times New Roman", serif; color: #000; background: none; font-size: 12pt; }
+h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif; }
+h1 { font-size: 19pt; }
+h2 { font-size:17pt; }
+h3 { font-size:15pt; }
+h4,h5,h6 { font-size:12pt; }
+code { font: 10pt Courier, monospace; }
+blockquote { margin: 1.3em; padding: 1em; }
+img { display: block; margin: 1em 0; }
+a img { border: none; }
+table { margin: 1px; text-align:left; }
+th { border-bottom: 1px solid #333;  font-weight: bold; }
+td { border-bottom: 1px solid #333; }
+th, td { padding: 4px 10px 4px 0; }
+caption { background: #fff; margin-bottom: 2em; text-align: left; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; }
+a { text-decoration: none; color: black; }
+
+} /* END print media */
