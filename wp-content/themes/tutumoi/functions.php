@@ -11,6 +11,7 @@
 	}
 
 	add_theme_support( 'woocommerce' );
+	add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 	//Adding image support for category images
 
