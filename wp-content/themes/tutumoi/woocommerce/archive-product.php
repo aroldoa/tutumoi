@@ -13,6 +13,28 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 get_header( 'shop' ); ?>
 
+<div class="col-lg-3">
+
+	<?php
+		/**
+		 * woocommerce_sidebar hook
+		 *
+		 * @hooked woocommerce_get_sidebar - 10
+		 */
+		do_action( 'woocommerce_sidebar' );
+	?>
+</div>
+
+<div class="col-lg-9">
+	<div class="breadcrumbs"></div>
+	<div class="cat-banner">
+		<img class="img-responsive" src="images/category-banner.jpg" alt="Category Banner"/>
+	</div>
+	<div class="product-sorting">
+		sorting goes here
+	</div>
+	<div class="product-listing row">
+
 	<?php
 		/**
 		 * woocommerce_before_main_content hook
@@ -79,13 +101,6 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
-	<?php
-		/**
-		 * woocommerce_sidebar hook
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
-
+	</div>
+</div>
 <?php get_footer( 'shop' ); ?>
