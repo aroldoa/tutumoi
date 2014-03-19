@@ -1,11 +1,17 @@
     <div class="pre-footer">
 	    <div class="col-lg-12">
-
+			<ul class="socialbuttons">
+				<li><a href="#"><img src="<?php bloginfo( 'template_directory' ); ?>/images/facebook.png" alt="Facebook"/></a></li>
+				<li><a href="#"><img src="<?php bloginfo( 'template_directory' ); ?>/images/twitter.png" alt="Facebook"/></a></li>
+				<li><a href="#"><img src="<?php bloginfo( 'template_directory' ); ?>/images/linkedin.png" alt="Facebook"/></a></li>
+				<li><a href="#"><img src="<?php bloginfo( 'template_directory' ); ?>/images/pinterest.png" alt="Facebook"/></a></li>
+				<li><a href="#"><img src="<?php bloginfo( 'template_directory' ); ?>/images/google+.png" alt="Facebook"/></a></li>
+			</ul>
 	    </div>
     </div>
 	    <div class="clearfix"></div>
 	<footer>
-	    <div class="col-sm-3">
+	    <div class="col-sm-3 widget">
 		    <h5>Customer Support</h5>
 		    <ul>
 				<li><a href="#">About Us</a></li>

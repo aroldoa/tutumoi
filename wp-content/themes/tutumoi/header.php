@@ -50,13 +50,14 @@
 <body <?php body_class(); ?>>
 <div class="container wrap">
 	<div class="col-lg-12 top-links">
-	<div class="col-lg-5"><p>NEED HELP WITH AN ORDER?  INFO@TUTUMOI.COM</p></div>
+	<div class="col-lg-5"><p>NEED HELP WITH AN ORDER?  <a href="#">INFO@TUTUMOI.COM</a></p></div>
 		<div class="col-lg-6 col-lg-offset-1">
 			<ul>
-				<a href="#"><li>Sign In</li></a>
-				<a href="#"><li>My Account</li></a>
-				<a href="#"><li>Customer Service</li></a>
-				<a href="#"><li>Shopping Bag</li></a>
+				<li><a href="#">Sign In</a></li>
+				<li><a href="#">My Account</a></li>
+				<li><a href="#">Customer Service</a></li>
+				<li><a href="#">Shopping Bag</a></li>
+				<li class="cart"><a href="#">(4)</a></li>
 			</ul>
 		</div>
 	</div><!-- end of Top Links -->

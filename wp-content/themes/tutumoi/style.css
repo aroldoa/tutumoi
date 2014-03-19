@@ -8,14 +8,20 @@ Version: 1
 */
 
 @import url('css/bootstrap.css');
-@media screen {
+@import url('css/icons.css');
 
+@media screen {
 body{background-color: #79b725;}
 .wrap{background-color:#fff;}
 .top-links{min-height: 40px; background-color: #f4f4f4; margin: 0px 0px 25px 0px;}
-.top-links p{margin: 12px 0px 0px 0px; font-size: 11px;}
-.top-links ul{display: inline; margin: 12px 0px 0px 0px; padding: 0px; float: right;}
-.top-links ul li{display: inline; margin: 0px 10px 0px 0px; padding: 0px;}
+.top-links p{margin: 12px 0px 0px 0px; font-size: 11px; color: #aeaeae;}
+.top-links a{color: #934c9e; text-decoration: none;}
+.top-links a:hover{color: #ec008c;}
+.top-links ul{display: inline; margin: 5px 0px 0px 0px; padding: 0px; float: right;}
+.top-links ul li{display: inline; margin: 0px 10px 0px 0px; padding: 0px; color: #aeaeae;}
+.top-links ul li a{color: #934c9e; text-decoration: none;}
+.top-links ul li.cart a{color: #aeaeae;}
+.top-links ul li.cart a:after{content: "\e079"; font-size: 16px; color: #aeaeae; font-family: 'ElegantIcons'; padding: 0px 0px 0px 4px; margin: 0px; }
 .logoarea{padding: 0px 0px; min-height: 80px; text-align: center;}
 header{margin: 0px 0px 0px 0px; padding: 0px;}
 .menu{border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6; min-height: 40px; margin-bottom: 20px;}
@@ -25,11 +31,20 @@ nav ul li{display: inline; margin: 0px 25px; padding: 0px; color: #9b9b9b; font-
 nav ul li a{text-decoration: none; color: #9b9b9b;}
 .slideshow{text-align: center;}
 form.search{margin: 8px 0px 0px 0px;}
+form.search:before{ background-image: url('images/search-icon.jpg'); background-position: left center; width: 29px; height: 28px; left: 0; background-repeat: no-repeat; background-color: red;}
 form.search input{border:none;border-left:1px solid #d8d8d8; background: none; width: 190px; height: 26px; text-indent: 15px; color: #9b9b9b;}
-.pre-footer{}
-footer{}
-.copyright{clear:both; padding: 20px 0px; background-color: #f8f8f8; min-height: 60px; color: #616161; font-size: 11px;}
+.pre-footer{ text-align: center; clear:both; height: 60px; background-image: url('images/social-back.jpg'); background-position: center center; background-repeat: repeat-x; margin: 20px 0px 0px 0px;}
+ul.socialbuttons{display: inline-block; margin: 10px 0px 0px 0px; padding: 0px;}
+ul.socialbuttons li{display: inline-block; margin: 0px; padding: 0px 5px;}
+footer{ padding: 10px 0px 0px 0px;clear: both; }
+.copyright{clear:both; padding: 12px 0px; background-color: #f8f8f8; min-height: 40px; color: #616161; font-size: 11px;}
+.clear{clear: both !important;}
 
+/*-----------------------------------------------------------
+	Start of Home Page
+----------------------------------------------------------*/
+.featured-products{clear: both; margin-top: 30px; }
+.featured-products img{margin-bottom: 15px;}
 /*-----------------------------------------------------------
 	Start of Product Category Page
 ----------------------------------------------------------*/
@@ -39,7 +54,6 @@ footer{}
 .product-listing img{margin-bottom: 15px;}
 .product-listing .prod-name{font-size: 16px; color: #934c9e; font-weight: lighter;}
 .product-listing .prod-price{font-size: 14px; color: #ec008c;}
-
 /*-----------------------------------------------------------
 	Start of Sidebar Area
 ----------------------------------------------------------*/
