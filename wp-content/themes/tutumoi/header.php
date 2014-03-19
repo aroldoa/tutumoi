@@ -69,7 +69,7 @@
 		<div class="col-lg-12 logoarea">
 			<a href="#"><img src="<?php bloginfo( 'template_directory' ); ?>/images/logo.png" alt="Tutus"/></a>
 		</div><!-- end of Logo -->
-		<div class="col-lg-12 menu">
+		<!-- <div class="col-lg-12 menu">
 			<nav class="col-lg-9">
 				<ul>
 				<li><a href="#">Colletions</a></li>
@@ -86,5 +86,55 @@
 					<input type="text" value="Search Here"/>
 				</form>
 			</div>
-		</div><!-- end of Menu area -->
+		</div>--><!-- end of Menu area -->
+<div class="col-lg-12 menu">
+		<?php
+		$defaults = array(
+			'theme_location'  => 'main',
+			'menu'            => '',
+			'container'       => 'nav',
+			'container_class' => 'col-lg-9',
+			'container_id'    => '',
+			'menu_class'      => '',
+			'menu_id'         => 'nav',
+			'echo'            => true,
+			'fallback_cb'     => 'wp_page_menu',
+			'before'          => '',
+			'after'           => '',
+			'link_before'     => '',
+			'link_after'      => '',
+			'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
+			'depth'           => 0,
+			'walker'          => ''
+		);?>
+
+		<?php wp_nav_menu( $defaults );?>
+
+	<?php
+	add_filter( 'wp_nav_menu_objects', 'add_menu_parent_class' );
+	function add_menu_parent_class( $items ) {
+
+		$parents = array();
+		foreach ( $items as $item ) {
+			if ( $item->menu_item_parent && $item->menu_item_parent > 0 ) {
+				$parents[] = $item->menu_item_parent;
+			}
+		}
+
+		foreach ( $items as $item ) {
+			if ( in_array( $item->ID, $parents ) ) {
+				$item->classes[] = 'menu-parent-item';
+			}
+		}
+
+		return $items;
+	}
+
+	?>
+	<div class="col-lg-3">
+				<form class="search">
+					<input type="text" value="Search Here"/>
+				</form>
+			</div>
+	</div><!-- end of Menu area -->
     </header><!-- end of header -->

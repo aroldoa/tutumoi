@@ -51,6 +51,18 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="<?php bloginfo( 'template_directory' ); ?>/js/bootstrap.min.js"></script>
+    <script>
+    (function(){
+		var navLi = $('nav li').children('ul').hide().end();
+
+		navLi.hover(function(){
+			$(this).find('> ul').stop(true, true).slideDown(250);
+		},function(){
+			$(this).find('> ul').stop(true, true).hide();
+		});
+
+	})();
+    </script>
 
 	<?php wp_footer(); ?>
 	<!-- Don't forget analytics -->
