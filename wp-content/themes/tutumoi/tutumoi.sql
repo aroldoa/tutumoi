@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 19, 2014 at 07:34 PM
+-- Generation Time: Mar 19, 2014 at 07:51 PM
 -- Server version: 5.5.29
 -- PHP Version: 5.4.10
 
@@ -103,7 +103,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=379 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=381 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -379,7 +379,9 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (375, '_transient_timeout_wc_ship_0bf079d26ec3e40de478337361479137', '1395250959', 'no'),
 (376, '_transient_wc_ship_0bf079d26ec3e40de478337361479137', 'a:1:{s:13:"free_shipping";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:13:"free_shipping";s:5:"label";s:13:"Free Shipping";s:4:"cost";i:0;s:5:"taxes";a:0:{}s:9:"method_id";s:13:"free_shipping";}}', 'no'),
 (377, '_transient_timeout_wc_ship_3990bf7f6723fd2538ae5fc717c9963a', '1395251062', 'no'),
-(378, '_transient_wc_ship_3990bf7f6723fd2538ae5fc717c9963a', 'a:1:{s:13:"free_shipping";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:13:"free_shipping";s:5:"label";s:13:"Free Shipping";s:4:"cost";i:0;s:5:"taxes";a:0:{}s:9:"method_id";s:13:"free_shipping";}}', 'no');
+(378, '_transient_wc_ship_3990bf7f6723fd2538ae5fc717c9963a', 'a:1:{s:13:"free_shipping";O:16:"WC_Shipping_Rate":5:{s:2:"id";s:13:"free_shipping";s:5:"label";s:13:"Free Shipping";s:4:"cost";i:0;s:5:"taxes";a:0:{}s:9:"method_id";s:13:"free_shipping";}}', 'no'),
+(379, '_site_transient_timeout_browser_234b58811ca2e0823c75728ee574c8f3', '1395859832', 'yes'),
+(380, '_site_transient_browser_234b58811ca2e0823c75728ee574c8f3', 'a:9:{s:8:"platform";s:9:"Macintosh";s:4:"name";s:6:"Safari";s:7:"version";s:5:"7.0.2";s:10:"update_url";s:28:"http://www.apple.com/safari/";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/safari.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/safari.png";s:15:"current_version";s:1:"5";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes');
 
 -- --------------------------------------------------------
 
@@ -763,7 +765,7 @@ CREATE TABLE `wp_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=30 ;
 
 --
 -- Dumping data for table `wp_usermeta`
@@ -786,7 +788,19 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (14, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
 (15, 1, 'wp_user-settings', 'libraryContent=browse'),
 (16, 1, 'wp_user-settings-time', '1395177873'),
-(17, 1, '_woocommerce_persistent_cart', 'a:1:{s:4:"cart";a:1:{s:32:"c20ad4d76fe97759aa27a0c99bff6710";a:8:{s:10:"product_id";i:12;s:12:"variation_id";s:0:"";s:9:"variation";s:0:"";s:8:"quantity";i:7;s:10:"line_total";d:840;s:8:"line_tax";i:0;s:13:"line_subtotal";d:840;s:17:"line_subtotal_tax";i:0;}}}');
+(17, 1, '_woocommerce_persistent_cart', 'a:1:{s:4:"cart";a:1:{s:32:"c20ad4d76fe97759aa27a0c99bff6710";a:8:{s:10:"product_id";i:12;s:12:"variation_id";s:0:"";s:9:"variation";s:0:"";s:8:"quantity";i:7;s:10:"line_total";d:840;s:8:"line_tax";i:0;s:13:"line_subtotal";d:840;s:17:"line_subtotal_tax";i:0;}}}'),
+(18, 2, 'first_name', ''),
+(19, 2, 'last_name', ''),
+(20, 2, 'nickname', 'primo'),
+(21, 2, 'description', ''),
+(22, 2, 'rich_editing', 'true'),
+(23, 2, 'comment_shortcuts', 'false'),
+(24, 2, 'admin_color', 'fresh'),
+(25, 2, 'use_ssl', '0'),
+(26, 2, 'show_admin_bar_front', 'true'),
+(27, 2, 'wp_capabilities', 'a:1:{s:13:"administrator";b:1;}'),
+(28, 2, 'wp_user_level', '10'),
+(29, 2, 'dismissed_wp_pointers', 'wp330_toolbar,wp330_saving_widgets,wp340_choose_image_from_library,wp340_customize_current_theme_link,wp350_media,wp360_revisions,wp360_locks');
 
 -- --------------------------------------------------------
 
@@ -808,14 +822,15 @@ CREATE TABLE `wp_users` (
   PRIMARY KEY (`ID`),
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `wp_users`
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1, 'aroldoa', '$P$BVpOQoGAMAZpz4340UF6EscDoSXKm0.', 'aroldoa', 'aroldo@primomotif.com', '', '2014-03-18 13:45:25', '', 0, 'aroldoa');
+(1, 'aroldoa', '$P$BVpOQoGAMAZpz4340UF6EscDoSXKm0.', 'aroldoa', 'aroldo@primomotif.com', '', '2014-03-18 13:45:25', '', 0, 'aroldoa'),
+(2, 'primo', '$P$BfvLVElQjqXP9roLjhIrEyvTBAeI4E/', 'primo', 'primo@primomotif.com', '', '2014-03-19 18:50:54', '', 0, 'primo');
 
 -- --------------------------------------------------------
 
