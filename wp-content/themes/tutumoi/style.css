@@ -50,12 +50,23 @@ ul#recent-articles li{display: block; margin: 0px 0px 10px 0px; padding: 0px 0px
 ul#recent-articles li a{color: #969696; text-decoration: none;}
 ul#recent-articles li span{display: block; color: #79b725 !important; font-size: 12px; text-transform: uppercase; line-height: 32px;}
 ul#recent-articles li a:hover{color: #ec008c;}
+.breadcrumbs nav{text-align: left;}
 
 /*-----------------------------------------------------------
 	Start of Home Page
 ----------------------------------------------------------*/
 .featured-products{clear: both; margin-top: 30px; }
 .featured-products img{margin-bottom: 15px;}
+
+
+/*-----------------------------------------------------------
+	Page Style
+----------------------------------------------------------*/
+#sidebar h2{color: #ec008c; font-weight: 500 !important;}
+.page h2{font-size: 32px; font-family: 'Dosis', sans-serif;  color: #ec008c;}
+
+
+
 /*-----------------------------------------------------------
 	Start of Product Category Page
 ----------------------------------------------------------*/

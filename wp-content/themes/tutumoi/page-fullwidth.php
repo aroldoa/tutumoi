@@ -1,10 +1,16 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Full Width
+ *
+ * A custom Home Page Template
+ *
+ * The "Template Name:" bit above allows this to be selectable
+ * from a dropdown menu on the edit page screen.
+ *
+ */
+get_header(); ?>
 
-<div class="col-lg-3">
-<?php get_sidebar('page'); ?>
-</div>
-
-<div class="col-lg-9 page">
+<div class="col-lg-12">
 	<div class="breadcrumbs"></div>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -20,7 +26,8 @@
 			</div>
 
 			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
-	<?php endwhile; endif; ?>
+
+		<?php endwhile; endif; ?>
 </div>
 
 
