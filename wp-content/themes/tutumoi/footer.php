@@ -11,9 +11,9 @@
     </div>
 	    <div class="clearfix"></div>
 	<footer>
-	    <div class="col-sm-3 widget">
+	    <div class="col-sm-3">
 		    <h5>Customer Support</h5>
-		    <ul>
+		    <ul id="footermenu">
 				<li><a href="#">About Us</a></li>
 			    <li><a href="#">Shipping & Returns</a></li>
 			    <li><a href="#">Our  Locations</a></li>
@@ -22,6 +22,14 @@
 		</div>
 		<div class="col-sm-3">
 		    <h5>Recent Articles</h5>
+		    <ul id="recent-articles">
+			    <li><a href="#">How to dress up and go to the radio but make sure
+you stand out from the crowd!</a> <span>1.31.2014</span></li>
+			    <li><a href="#">How to dress up and go to the radio but make sure
+you stand out from the crowd!</a> <span>1.31.2014</span></li>
+			    <li><a href="#">How to dress up and go to the radio but make sure
+you stand out from the crowd!</a> <span>1.31.2014</span></li>
+		    </ul>
 		</div>
 		<div class="col-sm-3">
 		    <h5>Instagram Feed</h5>

@@ -11,7 +11,7 @@ Version: 1
 @import url('css/icons.css');
 
 @media screen {
-body{background-color: #79b725;}
+body{background-color: #79b725; font-family: 'Scada', sans-serif;}
 .wrap{background-color:#fff;}
 .top-links{min-height: 40px; background-color: #f4f4f4; margin: 0px 0px 25px 0px;}
 .top-links p{margin: 12px 0px 0px 0px; font-size: 11px; color: #aeaeae;}
@@ -39,6 +39,17 @@ ul.socialbuttons li{display: inline-block; margin: 0px; padding: 0px 5px;}
 footer{ padding: 10px 0px 0px 0px;clear: both; }
 .copyright{clear:both; padding: 12px 0px; background-color: #f8f8f8; min-height: 40px; color: #616161; font-size: 11px;}
 .clear{clear: both !important;}
+footer h5{font-family: 'Ubuntu', sans-serif; font-size: 18px; color: #8e73b0; font-weight: 300; margin-bottom: 20px;}
+ul#footermenu{ margin: 0px 0px 0px 10px; padding: 0px;}
+ul#footermenu li{ display: block; font-size: 13px; margin: 0px 0px 10px 0px; padding: 0px; font-weight: lighter;}
+ul#footermenu li a{ color: #969696; text-decoration: none;}
+ul#footermenu li a:before{content: "\24"; font-size: 16px; color: #79b725; font-family: 'ElegantIcons'; padding: 0px 10px 0px 0px; margin: 0px;}
+ul#footermenu li a:hover{color: #ec008c;}
+ul#recent-articles{margin: 0px; padding: 0px;}
+ul#recent-articles li{display: block; margin: 0px 0px 10px 0px; padding: 0px 0px 5px 0px; font-size: 13px;}
+ul#recent-articles li a{color: #969696; text-decoration: none;}
+ul#recent-articles li span{display: block; color: #79b725 !important; font-size: 12px; text-transform: uppercase; line-height: 32px;}
+ul#recent-articles li a:hover{color: #ec008c;}
 
 /*-----------------------------------------------------------
 	Start of Home Page
