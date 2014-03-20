@@ -18,16 +18,16 @@
 	add_action( 'woocommerce_archive_description', 'woocommerce_category_image', 2 );
 
 	function woocommerce_category_image() {
-    if ( is_product_category() ){
-	    global $wp_query;
-	    $cat = $wp_query->get_queried_object();
-	    $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
-	    $image = wp_get_attachment_url( $thumbnail_id );
-	    if ( $image ) {
-		    echo '<img src="' . $image . '" alt="" />';
-		}
-	}
-}
+        if ( is_product_category() ){
+    	    global $wp_query;
+    	    $cat = $wp_query->get_queried_object();
+    	    $thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
+    	    $image = wp_get_attachment_url( $thumbnail_id );
+    	    if ( $image ) {
+    		    echo '<div class="cat-banner"><img src="' . $image . '" alt="" class="img-responsive" /></div>';
+    		}
+    	}
+    }
 
 	//Removing Breadcrumbs to reposition them
 	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);

@@ -29,10 +29,11 @@ get_header( 'shop' ); ?>
 	<div class="breadcrumbs">
 		<?php do_action('woo_custom_breadcrumb'); ?>
 	</div>
-	<div class="cat-banner">
-		<?php do_action('woocommerce_category_image'); ?>
-	</div>
-	<div class="product-listing row">
+	
+	<?php //do_action('woocommerce_category_image'); ?>
+	<?php do_action( 'woocommerce_archive_description' ); ?>
+	
+	
 
 	<?php
 		/**
@@ -44,7 +45,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
-		<?php do_action( 'woocommerce_archive_description' ); ?>
+		<?php //do_action( 'woocommerce_archive_description' ); ?>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -94,6 +95,6 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
-	</div>
+
 </div>
 <?php get_footer( 'shop' ); ?>
