@@ -33,6 +33,9 @@
 	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 	add_action( 'woo_custom_breadcrumb', 'woocommerce_breadcrumb' );
 
+	add_theme_support('post-thumbnails');
+	add_post_type_support( 'page', 'excerpt' );
+
 	// Clean up the <head>
 	function removeHeadLinks() {
     	remove_action('wp_head', 'rsd_link');

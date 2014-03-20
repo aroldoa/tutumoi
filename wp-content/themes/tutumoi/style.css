@@ -15,7 +15,7 @@ Version: 1
 body{background-color: #79b725; font-family: 'Scada', sans-serif;}
 .wrap{background-color:#fff;}
 .top-links{min-height: 40px; background-color: #f4f4f4; margin: 0px 0px 25px 0px;}
-.top-links p{margin: 12px 0px 0px 0px; font-size: 11px; color: #aeaeae;}
+.top-links p{margin: 12px 0px 0px 0px !important; font-size: 11px !important; color: #aeaeae; font-weight: 300;}
 .top-links a{color: #934c9e; text-decoration: none;}
 .top-links a:hover{color: #ec008c;}
 .top-links ul{display: inline; margin: 5px 0px 0px 0px; padding: 0px; float: right;}
@@ -40,7 +40,7 @@ ul.socialbuttons li{display: inline-block; margin: 0px; padding: 0px 5px;}
 footer{ padding: 10px 0px 0px 0px;clear: both; }
 .copyright{clear:both; padding: 12px 0px; background-color: #f8f8f8; min-height: 40px; color: #616161; font-size: 11px;}
 .clear{clear: both !important;}
-footer h5{font-family: 'Ubuntu', sans-serif; font-size: 18px; color: #8e73b0; font-weight: 300; margin-bottom: 20px;}
+footer h5{font-family: 'Ubuntu', sans-serif; font-size: 18px; color: #8e73b0; font-weight:300; margin-bottom: 20px;}
 ul#footermenu{ margin: 0px 0px 0px 10px; padding: 0px;}
 ul#footermenu li{ display: block; font-size: 13px; margin: 0px 0px 10px 0px; padding: 0px; font-weight: lighter;}
 ul#footermenu li a{ color: #969696; text-decoration: none;}
@@ -52,6 +52,7 @@ ul#recent-articles li a{color: #969696; text-decoration: none;}
 ul#recent-articles li span{display: block; color: #79b725 !important; font-size: 12px; text-transform: uppercase; line-height: 32px;}
 ul#recent-articles li a:hover{color: #ec008c;}
 .breadcrumbs nav{text-align: left;}
+
 /*-----------------------------------------------------------
 	Start of Home Page
 ----------------------------------------------------------*/
@@ -62,7 +63,8 @@ ul#recent-articles li a:hover{color: #ec008c;}
 	Page Style
 ----------------------------------------------------------*/
 #sidebar h2{color: #ec008c; font-weight: 500 !important;}
-.page h2{font-size: 32px; font-family: 'Dosis', sans-serif;  color: #ec008c;}
+.page h2{font-size: 32px; font-family: 'Dosis', sans-serif;  color: #ec008c; margin-bottom: 32px;}
+.page p{font-size: 14px; line-height: 24px; margin: 0px 0px 20px 0px; font-weight: lighter;}
 /*-----------------------------------------------------------
 	Start of Product Category Page
 ----------------------------------------------------------*/
@@ -80,6 +82,16 @@ ul#recent-articles li a:hover{color: #ec008c;}
 .widget ul{margin: 20px 0px 0px 30px; padding: 0px; display: block;}
 .widget ul li{margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; list-style-type: none; border-bottom: 1px solid #ededed;}
 .widget ul li a{color: #777777;}
+/*-----------------------------------------------------------
+	Start of WooCommerce Pages
+----------------------------------------------------------*/
+table.shop_table{width: 100%;}
+table.shop_table thead{background-color: #f6f6f6; height: 30px; line-height: 30px; margin-bottom: 30px;}
+tr.cart_item{ border-bottom: 1px solid #e3e3e3;}
+td.product-thumbnail img{width: 80px; height: 100px; padding: 10px;}
+td.product-name a{color: #969696; font-size: 14px;}
+td.product-name a:hover{color: #ec008c; text-decoration: none;}
+
 } /* END screen media */
 
 
