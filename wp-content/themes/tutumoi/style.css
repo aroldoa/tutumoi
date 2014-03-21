@@ -81,7 +81,7 @@ ul#recent-articles li a:hover{color: #ec008c;}
 .widget ul{margin: 20px 0px 0px 30px; padding: 0px; display: block;}
 .widget ul li{margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; list-style-type: none; border-bottom: 1px solid #ededed;}
 .widget ul li a{color: #777777;}
-<<<<<<< HEAD
+
 /*-----------------------------------------------------------
 	Start of WooCommerce Pages
 ----------------------------------------------------------*/
@@ -101,8 +101,6 @@ table.variations{text-align: left;}
 .single_add_to_cart_button{background-color: #ec008c; color: #fff; border: none; padding: 12px 40px; margin-top: 10px; margin-bottom: 10px; border-radius: 3px;}
 .single_add_to_cart_button:hover{background-color: #934c9e;}
 
-=======
->>>>>>> FETCH_HEAD
 } /* END screen media */
 
 
