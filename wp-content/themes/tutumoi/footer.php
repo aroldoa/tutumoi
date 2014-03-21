@@ -61,6 +61,30 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 			$(this).find('> ul').stop(true, true).hide();
 		});
 
+		//hover over swap
+		$('.overlay').hover(
+			function(){
+				$div = $(this);
+				$div.find('#product_category_image_0').stop(true, true).fadeTo(100,0);
+				$div.find('#product_category_image_1').stop(true, true).fadeIn(200);
+			},
+			function(){
+				$div.find('#product_category_image_1').stop(true, true).fadeOut(100);
+				$div.find('#product_category_image_0').stop(true, true).fadeTo(200,1);
+			}
+		);
+
+		//single product tabs
+		$('.panel').css('display','none');
+
+		// Eexplanation:
+		// 	After saving the element that we are looking for, we need to slide it down so it appears. Afer this we need to go up to its parent element and select all of it's uncles (or its parents siblings).
+		// 	Then we look fot their children (the element's cousins, aka all other elements with the class of panel) and then slide those up.
+		$('.tabs').on('click','li',function(){
+			$details = $(this).find('.panel');
+			$details.slideDown(200).parent().siblings().find('.panel').slideUp(200);
+		});
+
 	})();
     </script>
 
