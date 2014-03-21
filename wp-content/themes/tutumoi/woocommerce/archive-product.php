@@ -29,11 +29,9 @@ get_header( 'shop' ); ?>
 	<div class="breadcrumbs">
 		<?php do_action('woo_custom_breadcrumb'); ?>
 	</div>
-	
+
 	<?php //do_action('woocommerce_category_image'); ?>
 	<?php do_action( 'woocommerce_archive_description' ); ?>
-	
-	
 
 	<?php
 		/**
@@ -49,6 +47,8 @@ get_header( 'shop' ); ?>
 
 		<?php if ( have_posts() ) : ?>
 
+
+<div class="col-sm-9 results row">
 			<?php
 				/**
 				 * woocommerce_before_shop_loop hook
@@ -56,9 +56,23 @@ get_header( 'shop' ); ?>
 				 * @hooked woocommerce_result_count - 20
 				 * @hooked woocommerce_catalog_ordering - 30
 				 */
-				do_action( 'woocommerce_before_shop_loop' );
+				do_action( 'woo_results' );
 			?>
+</div>
 
+<div class="col-sm-3 sorting">
+			<?php
+				/**
+				 * woocommerce_before_shop_loop hook
+				 *
+				 * @hooked woocommerce_result_count - 20
+				 * @hooked woocommerce_catalog_ordering - 30
+				 */
+				do_action( 'woo_sorting' );
+			?>
+</div>
+
+<div class="clear"></div>
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>

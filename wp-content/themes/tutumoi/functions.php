@@ -33,6 +33,21 @@
 	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 	add_action( 'woo_custom_breadcrumb', 'woocommerce_breadcrumb' );
 
+	//Removing and Repositioning the sort by and results for woocommerce Archive Product page
+	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+    add_action('woo_results', 'woocommerce_result_count', 20 );
+    add_action('woo_sorting', 'woocommerce_catalog_ordering', 30 );
+
+    //Remove and Reposition Related, Tabs, and upsell
+
+    remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
+	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+	add_action( 'woo_tabs', 'woocommerce_output_product_data_tabs', 10 );
+
 	add_theme_support('post-thumbnails');
 	add_post_type_support( 'page', 'excerpt' );
 

@@ -26,6 +26,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	 }
 ?>
 
+	<div class=" col-lg-12 breadcrumbs">
+		<?php do_action('woo_custom_breadcrumb'); ?>
+	</div>
+
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php
@@ -38,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<div class="summary entry-summary">
+	<div class="col-sm-5 summary entry-summary">
 
 		<?php
 			/**
@@ -54,21 +58,18 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			 */
 			do_action( 'woocommerce_single_product_summary' );
 		?>
+	<?php
+
+		do_action( 'woo_tabs' );
+	?>
+
 
 	</div><!-- .summary -->
 
-	<?php
-		/**
-		 * woocommerce_after_single_product_summary hook
-		 *
-		 * @hooked woocommerce_output_product_data_tabs - 10
-		 * @hooked woocommerce_output_related_products - 20
-		 */
-		do_action( 'woocommerce_after_single_product_summary' );
-	?>
 
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 
 </div><!-- #product-<?php the_ID(); ?> -->
+<div class="clear"></div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

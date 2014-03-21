@@ -19,7 +19,7 @@ $attributes = $product->get_attributes();
 
 ob_start();
 ?>
-<table class="shop_attributes">
+<table class="col-sm-3 shop_attributes">
 
 	<?php if ( $product->enable_dimensions_display() ) : ?>
 
@@ -64,7 +64,7 @@ ob_start();
 			?></td>
 		</tr>
 	<?php endforeach; ?>
-	
+
 </table>
 <?php
 if ( $has_row ) {
