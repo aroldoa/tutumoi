@@ -33,7 +33,6 @@
 	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 	add_action( 'woo_custom_breadcrumb', 'woocommerce_breadcrumb' );
 
-<<<<<<< HEAD
 	//Removing and Repositioning the sort by and results for woocommerce Archive Product page
 	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
@@ -52,8 +51,6 @@
 	add_theme_support('post-thumbnails');
 	add_post_type_support( 'page', 'excerpt' );
 
-=======
->>>>>>> FETCH_HEAD
 	// Clean up the <head>
 	function removeHeadLinks() {
     	remove_action('wp_head', 'rsd_link');
@@ -178,11 +175,11 @@
     //reorder product tabs
     add_filter( 'woocommerce_product_tabs', 'woo_reorder_tabs', 98 );
     function woo_reorder_tabs( $tabs ) {
-     
+
         $tabs['description']['priority'] = 5;          // Description first
         $tabs['additional_information']['priority'] = 10;   // Additional information second
         $tabs['reviews']['priority'] = 15;           // Reviews last
-     
+
         return $tabs;
     }
 
