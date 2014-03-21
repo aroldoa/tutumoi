@@ -81,7 +81,6 @@ ul#recent-articles li a:hover{color: #ec008c;}
 .widget ul{margin: 20px 0px 0px 30px; padding: 0px; display: block;}
 .widget ul li{margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; list-style-type: none; border-bottom: 1px solid #ededed;}
 .widget ul li a{color: #777777;}
-
 /*-----------------------------------------------------------
 	Start of WooCommerce Pages
 ----------------------------------------------------------*/
@@ -92,7 +91,7 @@ td.product-thumbnail img{width: 80px; height: 100px; padding: 10px;}
 td.product-name a{color: #969696; font-size: 14px;}
 td.product-name a:hover{color: #ec008c; text-decoration: none;}
 .sorting select{float: right; text-align: right;}
-h1.entry-title{font-weight: 300; font-size: 28px; margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; color: #ec008c; font-family: 'Open Sans', sans-serif; }
+h1.entry-title{font-weight: 300; font-size: 28px; margin: 0px 0px 5px 0px; padding: 0px 0px 10px 0px; color: #ec008c; font-family: 'Open Sans', sans-serif; }
 .entry-summary p.price{font-size: 18px; color: #934c9e;}
 .input-text{width: 40px;}
 .entry-summary form{margin-top: 30px;}
@@ -100,15 +99,24 @@ table.variations{text-align: left;}
 .entry-summary p{font-size: 14px; line-height: 21px; color: #686868;}
 .single_add_to_cart_button{background-color: #ec008c; color: #fff; border: none; padding: 12px 40px; margin-top: 10px; margin-bottom: 10px; border-radius: 3px;}
 .single_add_to_cart_button:hover{background-color: #934c9e;}
-
+.breadcrumbs a{color: #934c9e;}
+.breadcrumbs nav{ color: #bebebe;}
+.images{text-align:left; margin: 0px; padding: 0px;}
+.summary{ margin: 0px; padding: 0px;}
+.variations_form{text-align:left; color: #222; font-size: 13px; margin-bottom: 15px;}
+.variations_form select{float: left; margin: 0px; padding: 0px;}
+table.variations label{color: #222; font-size: 12px;}
+.woocommerce-tabs{margin: 0px; padding: 0px; width: 100%;}
+ul.tabs{margin: 0px; padding: 0px; display: block;}
+ul.tabs li{text-align: left; display: block; margin: 0px 0px 5px 0px; padding: 0px 0px 5px 0px; border-bottom: 1px solid #e9e9e9;}
+ul.tabs li .panel p{margin-top: 20px;}
+.additional_information_tab table{width: 100%;}
 } /* END screen media */
 
 
 @media print {
-
 .do-not-print { display: none; }
 #comments { page-break-before: always; }
-
 body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: Garamond,"Times New Roman", serif; color: #000; background: none; font-size: 12pt; }
 h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif; }
 h1 { font-size: 19pt; }
@@ -127,7 +135,6 @@ caption { background: #fff; margin-bottom: 2em; text-align: left; }
 thead { display: table-header-group; }
 tr { page-break-inside: avoid; }
 a { text-decoration: none; color: black; }
-
 } /* END print media */
 
 

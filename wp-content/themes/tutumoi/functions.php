@@ -48,6 +48,10 @@
 
 	add_action( 'woo_tabs', 'woocommerce_output_product_data_tabs', 10 );
 
+	//Remove Sku and Categories line
+
+	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
 	add_theme_support('post-thumbnails');
 	add_post_type_support( 'page', 'excerpt' );
 

@@ -26,7 +26,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	 }
 ?>
 
-	<div class=" col-lg-12 breadcrumbs">
+
+	<div class="col-lg-12 breadcrumbs">
 		<?php do_action('woo_custom_breadcrumb'); ?>
 	</div>
 
@@ -44,7 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
-	<div class="col-lg-5 summary entry-summary">
+	<div class="col-sm-5 row summary entry-summary">
 
 		<?php
 			/**
@@ -68,14 +69,19 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 	</div><!-- .summary -->
 
-	<div class="col-lg-2 previously-viewed">
-		asf
-	</div>
 
 
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 
+
+	<div class="col-sm-1 row previously-viewed">
+		asf
+	</div>
+
+
 </div><!-- #product-<?php the_ID(); ?> -->
+
+
 <div class="clear"></div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
