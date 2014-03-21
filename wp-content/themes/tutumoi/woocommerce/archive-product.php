@@ -26,10 +26,15 @@ get_header( 'shop' ); ?>
 </div>
 
 <div class="col-lg-9">
+<<<<<<< HEAD
 	<div class="breadcrumbs">
 		<?php do_action('woo_custom_breadcrumb'); ?>
 	</div>
 
+=======
+	
+	
+>>>>>>> FETCH_HEAD
 	<?php //do_action('woocommerce_category_image'); ?>
 	<?php do_action( 'woocommerce_archive_description' ); ?>
 

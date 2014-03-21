@@ -33,6 +33,7 @@
 	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
 	add_action( 'woo_custom_breadcrumb', 'woocommerce_breadcrumb' );
 
+<<<<<<< HEAD
 	//Removing and Repositioning the sort by and results for woocommerce Archive Product page
 	remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
@@ -51,6 +52,8 @@
 	add_theme_support('post-thumbnails');
 	add_post_type_support( 'page', 'excerpt' );
 
+=======
+>>>>>>> FETCH_HEAD
 	// Clean up the <head>
 	function removeHeadLinks() {
     	remove_action('wp_head', 'rsd_link');
@@ -100,6 +103,8 @@
 
         ) );
 
+// ************************************************************************************************************************
+    //custom change to thumbnails so we can use hover effect with jquery on category page
     function woocommerce_remove_product_thumbnail(){
         remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
     }
@@ -158,7 +163,7 @@
 
 
 // ************************************************************************************************************************
-
+    // custom price html tags
     remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
     function woocommerce_custom_price_loop(){
         global $product;
@@ -170,11 +175,15 @@
     add_action( 'woo_custom_price_loop', 'woocommerce_custom_price_loop' );
 
 // ************************************************************************************************************************
-    // function woo_custom_product_loop_start(){
-    //     echo('<div class="col-sm-4">');
-    // }
-    // function woo_custom_product_loop_end(){
-    //     echo('</div>');
-    // }
+    //reorder product tabs
+    add_filter( 'woocommerce_product_tabs', 'woo_reorder_tabs', 98 );
+    function woo_reorder_tabs( $tabs ) {
+     
+        $tabs['description']['priority'] = 5;          // Description first
+        $tabs['additional_information']['priority'] = 10;   // Additional information second
+        $tabs['reviews']['priority'] = 15;           // Reviews last
+     
+        return $tabs;
+    }
 
 ?>
