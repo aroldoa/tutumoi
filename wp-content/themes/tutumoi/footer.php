@@ -51,6 +51,9 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="<?php bloginfo( 'template_directory' ); ?>/js/bootstrap.min.js"></script>
+    <!-- Include the plugin *after* the jQuery library -->
+	<script src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.bxslider.js"></script>
+	
     <script>
     (function(){
 		var navLi = $('nav li').children('ul').hide().end();
@@ -84,6 +87,13 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 			$details = $(this).find('.panel');
 			$details.slideDown(200).parent().siblings().find('.panel').slideUp(200);
 		});
+
+
+		//single product slideshow
+		$('.bxslider').bxSlider({
+		 	pagerCustom: '#bx-pager'
+		});
+
 
 	})();
     </script>

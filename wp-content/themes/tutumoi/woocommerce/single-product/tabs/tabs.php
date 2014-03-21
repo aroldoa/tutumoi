@@ -21,15 +21,15 @@ if ( ! empty( $tabs ) ) : ?>
 
 	<div class="woocommerce-tabs">
 		<ul class="tabs">
-			<?php foreach ( $tabs as $key => $tab ) : ?>
-			<?php //print_r($tabs);?>
-
-				<li class="<?php echo $key ?>_tab">
-					<div class="title"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', $tab['title'], $key ) ?></div>
-					<div class="panel entry-content" id="tab-<?php echo $key ?>">
-						<?php call_user_func( $tab['callback'], $key, $tab ) ?>
-					</div>
-				</li>
+			<?php foreach ( $tabs as $key => $tab ) :
+				if(!empty($tab['callback'])){?>
+					<li class="<?php echo $key ?>_tab">
+						<div class="title"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', $tab['title'], $key ) ?></div>
+						<div class="panel entry-content" id="tab-<?php echo $key ?>">
+							<?php call_user_func( $tab['callback'], $key, $tab ) ?>
+						</div>
+					</li>
+				<?php } ?>
 
 			<?php endforeach; ?>
 		</ul>

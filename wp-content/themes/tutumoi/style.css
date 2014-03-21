@@ -10,6 +10,7 @@ Version: 1
 @import url('css/bootstrap.css');
 @import url('css/icons.css');
 @import url('css/menu.css');
+@import url('css/jquery.bxslider.css');
 
 @media screen {
 body{background-color: #79b725; font-family: 'Scada', sans-serif;}
