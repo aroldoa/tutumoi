@@ -49,7 +49,7 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="<?php bloginfo( 'template_directory' ); ?>/js/bootstrap.min.js"></script>
     <!-- Include the plugin *after* the jQuery library -->
 	<script src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.bxslider.js"></script>
