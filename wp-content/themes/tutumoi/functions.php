@@ -116,7 +116,7 @@
     function woocommerce_custom_product_category(){
         global $post;
         global $product;
-        global $jckqv;
+        
 
         $size = 'shop_catalog';
         $opening_container = '<div class="overlay">';
@@ -148,7 +148,7 @@
             $images = $opening_container . $img_tags . $closing_container;
 
             
-            echo($images . $jckqv->displayBtn($post->ID));
+            echo($images);
 
         }elseif(has_post_thumbnail()){
              $attrs = array(
@@ -158,7 +158,7 @@
                 'alt'   => @trim(strip_tags( $attachment->post_excerpt )),
                 'title' => @trim(strip_tags( $attachment->post_title ))
             );
-            echo (get_the_post_thumbnail( $post->ID, $size, $attrs) . $jckqv->displayBtn($post->ID));
+            echo (get_the_post_thumbnail( $post->ID, $size, $attrs));
         }
         elseif ( wc_placeholder_img_src() )
             echo (wc_placeholder_img( $size ));
