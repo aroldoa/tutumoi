@@ -128,8 +128,8 @@
                 'id'    => 'product_category_image_0',
                 'src'   => $src[0],
                 'class' => "img-responsive attachment-$size",
-                'alt'   => trim(strip_tags( $attachment->post_excerpt )),
-                'title' => trim(strip_tags( $attachment->post_title )),
+                'alt'   => @trim(strip_tags( $attachment->post_excerpt )),
+                'title' => @trim(strip_tags( $attachment->post_title ))
             );
             $img_tags = (get_the_post_thumbnail( $post->ID, $size, $attrs));
         }
@@ -146,17 +146,19 @@
             }
             $closing_container = '</div>';
             $images = $opening_container . $img_tags . $closing_container;
-            echo($images . $jckqv->displayBtn($product_id));
+
+            
+            echo($images . $jckqv->displayBtn($post->ID));
 
         }elseif(has_post_thumbnail()){
              $attrs = array(
                 'id'    => 'product_category_image_0',
                 'src'   => $src[0],
                 'class' => "img-responsive attachment-$size",
-                'alt'   => trim(strip_tags( $attachment->post_excerpt )),
-                'title' => trim(strip_tags( $attachment->post_title )),
+                'alt'   => @trim(strip_tags( $attachment->post_excerpt )),
+                'title' => @trim(strip_tags( $attachment->post_title ))
             );
-            echo (get_the_post_thumbnail( $post->ID, $size, $attrs) . $jckqv->displayBtn($product_id));
+            echo (get_the_post_thumbnail( $post->ID, $size, $attrs) . $jckqv->displayBtn($post->ID));
         }
         elseif ( wc_placeholder_img_src() )
             echo (wc_placeholder_img( $size ));
