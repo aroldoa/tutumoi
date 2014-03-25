@@ -117,7 +117,7 @@
         global $post;
         global $product;
         global $jckqv;        
-        print_r($jckqv);
+
 
         $size = 'shop_catalog';
         $opening_container = '<div class="overlay">';
@@ -150,7 +150,10 @@
 
             
             echo($images);
-            echo($jckqv->displayBtn($post->ID));
+            if(!empty($jckqv)){
+                echo($jckqv->displayBtn($post->ID));    
+            }
+            
 
         }elseif(has_post_thumbnail()){
              $attrs = array(
@@ -161,7 +164,9 @@
                 'title' => @trim(strip_tags( $attachment->post_title ))
             );
             echo (get_the_post_thumbnail( $post->ID, $size, $attrs));
-            echo($jckqv->displayBtn($post->ID));
+            if(!empty($jckqv)){
+                echo($jckqv->displayBtn($post->ID));    
+            }
         }
         elseif ( wc_placeholder_img_src() )
             echo (wc_placeholder_img( $size ));
