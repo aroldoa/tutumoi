@@ -50,8 +50,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 			 */
 			// do_action( 'woocommerce_before_shop_loop_item_title' );
 			do_action( 'woo_custom_product_category');
-			global $jckqv;
-			echo($jckqv->displayBtn($post->ID));
+			
 
 		?>
 		<div class="prod-name"><?php the_title(); ?></div>
