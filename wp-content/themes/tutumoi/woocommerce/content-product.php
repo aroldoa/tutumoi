@@ -52,7 +52,6 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 			do_action( 'woo_custom_product_category');
 
 		?>
-	</a>
 		<div class="prod-name"><?php the_title(); ?></div>
 
 		<?php
@@ -66,6 +65,7 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
 			do_action( 'woo_custom_price_loop' );
 		?>
 
-	<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
+	</a>
+	<?php //do_action( 'woocommerce_after_shop_loop_item' ); ?>
 
 </div>

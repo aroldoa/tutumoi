@@ -50,19 +50,27 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.hoverIntent.minified.js"></script>
+    <script src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.dcmegamenu.1.3.4.min.js"></script>
     <script src="<?php bloginfo( 'template_directory' ); ?>/js/bootstrap.min.js"></script>
     <!-- Include the plugin *after* the jQuery library -->
 	<script src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.bxslider.js"></script>
 	
     <script>
     (function(){
-		var navLi = $('nav li').children('ul').hide().end();
 
-		navLi.hover(function(){
-			$(this).find('> ul').stop(true, true).slideDown(250);
-		},function(){
-			$(this).find('> ul').stop(true, true).hide();
-		});
+    	jQuery('#mega-menu-1').dcMegaMenu({
+    		rowItems: '3',
+        	speed: 'fast'
+    	});
+
+		// var navLi = $('nav li').children('ul').hide().end();
+
+		// navLi.hover(function(){
+		// 	$(this).find('> ul').stop(true, true).slideDown(250);
+		// },function(){
+		// 	$(this).find('> ul').stop(true, true).hide();
+		// });
 
 		//hover over swap
 		$('.overlay').hover(

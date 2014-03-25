@@ -49,6 +49,7 @@ global $post, $woocommerce, $product;
 		}
 	?>
 	</ul>
-	<?php do_action( 'woocommerce_product_thumbnails' ); ?>
+	
+	<?php		do_action( 'woocommerce_product_thumbnails' ); ?>
 
 </div>

@@ -47,6 +47,7 @@
 	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 	add_action( 'woo_tabs', 'woocommerce_output_product_data_tabs', 10 );
+    add_action( 'woo_related', 'woocommerce_output_related_products', 20 );
 
 	//Remove Sku and Categories line
 
@@ -115,6 +116,7 @@
     function woocommerce_custom_product_category(){
         global $post;
         global $product;
+        global $jckqv;
 
         $size = 'shop_catalog';
         $opening_container = '<div class="overlay">';
@@ -144,7 +146,7 @@
             }
             $closing_container = '</div>';
             $images = $opening_container . $img_tags . $closing_container;
-            echo($images);
+            echo($images . $jckqv->displayBtn($product_id));
 
         }elseif(has_post_thumbnail()){
              $attrs = array(
@@ -154,7 +156,7 @@
                 'alt'   => trim(strip_tags( $attachment->post_excerpt )),
                 'title' => trim(strip_tags( $attachment->post_title )),
             );
-            echo (get_the_post_thumbnail( $post->ID, $size, $attrs));
+            echo (get_the_post_thumbnail( $post->ID, $size, $attrs) . $jckqv->displayBtn($product_id));
         }
         elseif ( wc_placeholder_img_src() )
             echo (wc_placeholder_img( $size ));
@@ -186,5 +188,22 @@
 
         return $tabs;
     }
+
+
+    function woo_related_products_limit() {
+      global $product;
+
+        $args = array(
+            'post_type'             => 'product',
+            'no_found_rows'         => 1,
+            'posts_per_page'        => 4,
+            'ignore_sticky_posts'   => 1,
+            'orderby'               => $orderby,
+            'post__in'              => $related,
+            'post__not_in'          => array($product->id)
+        );
+        return $args;
+    }
+    add_filter( 'woocommerce_related_products_args', 'woo_related_products_limit' );
 
 ?>

@@ -96,21 +96,22 @@
 			'container'       => 'nav',
 			'container_class' => 'col-lg-9',
 			'container_id'    => '',
-			'menu_class'      => '',
-			'menu_id'         => 'nav',
+			'menu_class'      => 'mega-menu',
+			'menu_id'         => 'mega-menu-1',
 			'echo'            => true,
 			'fallback_cb'     => 'wp_page_menu',
 			'before'          => '',
 			'after'           => '',
 			'link_before'     => '',
 			'link_after'      => '',
-			'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
+			'items_wrap'      => '<ul class="%2$s" id="mega-menu-1">%3$s</ul>',
 			'depth'           => 0,
 			'walker'          => ''
 		);?>
 
 		<?php wp_nav_menu( $defaults );?>
 
+		
 	<?php
 	add_filter( 'wp_nav_menu_objects', 'add_menu_parent_class' );
 	function add_menu_parent_class( $items ) {

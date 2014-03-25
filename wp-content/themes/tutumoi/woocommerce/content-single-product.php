@@ -43,6 +43,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		 * @hooked woocommerce_show_product_images - 20
 		 */
 		do_action( 'woocommerce_before_single_product_summary' );
+
+
 	?>
 
 	<div class="col-sm-5 row summary entry-summary">
@@ -64,10 +66,23 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	<?php
 
 		do_action( 'woo_tabs' );
+		echo do_shortcode('[social_share/]');
 	?>
 
 
 	</div><!-- .summary -->
+
+<div class="clear"></div>
+<div class="prod-upsell">
+	<?php
+		/**
+		 * woo related hook
+		 *
+		 * @hooked woocommerce_output_product_data_tabs - 20
+		 */
+		do_action('woo_related');
+	?>
+	</div><!-- end of product upsell area -->
 
 
 
