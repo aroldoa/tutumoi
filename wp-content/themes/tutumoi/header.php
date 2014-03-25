@@ -111,7 +111,7 @@
 
 		<?php wp_nav_menu( $defaults );?>
 
-		
+
 	<?php
 	add_filter( 'wp_nav_menu_objects', 'add_menu_parent_class' );
 	function add_menu_parent_class( $items ) {
@@ -140,3 +140,4 @@
 			</div>
 	</div><!-- end of Menu area -->
     </header><!-- end of header -->
+<div class="clear"></div>

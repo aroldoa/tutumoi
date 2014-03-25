@@ -25,7 +25,7 @@ body{background-color: #79b725; font-family: 'Scada', sans-serif;}
 .top-links ul li.cart a{color: #aeaeae;}
 .top-links ul li.cart a:after{content: "\e079"; font-size: 16px; color: #aeaeae; font-family: 'ElegantIcons'; padding: 0px 0px 0px 4px; margin: 0px; }
 .logoarea{padding: 0px 0px; min-height: 80px; text-align: center;}
-header{margin: 0px 0px 0px 0px; padding: 0px;}
+header{clear:both; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
 .menu{border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6; max-height:40px; margin-bottom: 20px;}
 /*nav ul li{display: inline; margin: 0px 25px; padding: 0px; color: #9b9b9b; font-size: 13px;}*/
 nav ul{padding:0px;}
@@ -69,6 +69,7 @@ h2 span{background-color: #fff; margin: 0px; padding: 0px 20px; }
 .prod-name,.prod-price{text-align: left;}
 #sidebar h2{color: #ec008c; font-weight: 500 !important;}
 .page h2{font-size: 32px; font-family: 'Dosis', sans-serif;  color: #ec008c;}
+.page{padding: 45px 0px 0px 0px;}
 /*-----------------------------------------------------------
 	Start of Product Category Page
 ----------------------------------------------------------*/
