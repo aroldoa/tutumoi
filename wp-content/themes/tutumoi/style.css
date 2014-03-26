@@ -175,7 +175,7 @@ a { text-decoration: none; color: black; }
 /*quickview styling on category page*/
 .jckqvBtn{
     position: absolute !important;
-    top: 35%;
+    top: 40%;
     left:30%;
     padding: 10px 15px;
     opacity:.9;

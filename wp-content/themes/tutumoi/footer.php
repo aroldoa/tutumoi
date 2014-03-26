@@ -64,18 +64,18 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
         	speed: 'fast'
     	});
 
-		//hover over swap
-		$('.overlay').hover(
-			function(){
-				$div = $(this);
-				$div.find('#product_category_image_0').stop(true, true).fadeTo(100,0);
-				$div.find('#product_category_image_1').stop(true, true).fadeIn(200);
-			},
-			function(){
-				$div.find('#product_category_image_1').stop(true, true).fadeOut(100);
-				$div.find('#product_category_image_0').stop(true, true).fadeTo(200,1);
-			}
-		);
+		//hover over swap (not used due to conflict with quickview)
+		// $('.overlay').hover(
+		// 	function(){
+		// 		$div = $(this);
+		// 		$div.find('#product_category_image_0').stop(true, true).fadeTo(100,0);
+		// 		$div.find('#product_category_image_1').stop(true, true).fadeIn(200);
+		// 	},
+		// 	function(){
+		// 		$div.find('#product_category_image_1').stop(true, true).fadeOut(100);
+		// 		$div.find('#product_category_image_0').stop(true, true).fadeTo(200,1);
+		// 	}
+		// );
 
 		//single product tabs
 		$('.panel').css('display','none');
@@ -95,15 +95,22 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 		});
 
 		$quickview = $('.jckqvBtn');
-		$quickview.css('display', 'none');
+		$quickview.css('opacity', 0);
 
 		$('.col-sm-4').hover(
 			function(){
-				$parent_div = $(this);
-				$parent_div.find('.jckqvBtn').stop(true,true).fadeIn(200);
+					$parent_div = $(this);
+					$parent_div.find('.jckqvBtn').animate({
+						opacity: .9,
+						top: "35%"
+					},200);
 			},
 			function(){
-				$parent_div.find('.jckqvBtn').stop(true,true).fadeOut(200);
+					$parent_div = $(this);
+					$parent_div.find('.jckqvBtn').animate({
+						opacity: 0,
+						top: "40%"
+					},200);;
 			}
 		);
 
