@@ -13,15 +13,46 @@
 	<footer>
 	    <div class="col-sm-3">
 		    <h5>Customer Support</h5>
-		    <ul id="footermenu">
+
+		    <?php
+
+				$footernav = array(
+					'theme_location'  => 'footernav',
+					'menu'            => '',
+					'container'       => '',
+					'container_class' => '',
+					'container_id'    => '',
+					'menu_class'      => '',
+					'menu_id'         => '',
+					'echo'            => true,
+					'before'          => '',
+					'after'           => '',
+					'link_before'     => '',
+					'link_after'      => '',
+					'items_wrap'      => '<ul id="footermenu" class="%2$s">%3$s</ul>',
+					'depth'           => 0,
+					'walker'          => ''
+				);
+
+				wp_nav_menu( $footernav );
+
+			?>
+
+		    <!--<ul id="footermenu">
 				<li><a href="#">About Us</a></li>
 			    <li><a href="#">Shipping & Returns</a></li>
 			    <li><a href="#">Our  Locations</a></li>
 			    <li><a href="#">Help Placing an Order</a></li>
-		    </ul>
+		    </ul>-->
 		</div>
 		<div class="col-sm-3">
-		    <h5>Recent Articles</h5>
+
+
+    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Footer Widget')) : else : ?>
+
+   	<?php endif; ?>
+
+		   <!-- <h5>Recent Articles</h5>
 		    <ul id="recent-articles">
 			    <li><a href="#">How to dress up and go to the radio but make sure
 you stand out from the crowd!</a> <span>1.31.2014</span></li>
@@ -29,7 +60,7 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 you stand out from the crowd!</a> <span>1.31.2014</span></li>
 			    <li><a href="#">How to dress up and go to the radio but make sure
 you stand out from the crowd!</a> <span>1.31.2014</span></li>
-		    </ul>
+		    </ul> -->
 		</div>
 		<div class="col-sm-3">
 		    <h5>Instagram Feed</h5>
@@ -55,7 +86,7 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
     <script src="<?php bloginfo( 'template_directory' ); ?>/js/bootstrap.min.js"></script>
     <!-- Include the plugin *after* the jQuery library -->
 	<script src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.bxslider.js"></script>
-	
+
     <script>
     (function(){
 

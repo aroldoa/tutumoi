@@ -100,8 +100,48 @@
     	));
     }
 
+
+	if (function_exists('register_sidebar')) {
+    	register_sidebar(array(
+    		'name' => 'Footer Widget',
+    		'id'   => 'footer-widget',
+    		'description'   => 'These are widgets for the sidebar.',
+    		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    		'after_widget'  => '</div>',
+    		'before_title'  => '<h5>',
+    		'after_title'   => '</h5>'
+    	));
+    }
+
+	if (function_exists('register_sidebar')) {
+    	register_sidebar(array(
+    		'name' => 'Footer Widget2',
+    		'id'   => 'footer-widget2',
+    		'description'   => 'These are widgets for the sidebar.',
+    		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    		'after_widget'  => '</div>',
+    		'before_title'  => '<h2>',
+    		'after_title'   => '</h2>'
+    	));
+    }
+
+    if (function_exists('register_sidebar')) {
+    	register_sidebar(array(
+    		'name' => 'Footer Widget3',
+    		'id'   => 'footer-widget3',
+    		'description'   => 'These are widgets for the sidebar.',
+    		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    		'after_widget'  => '</div>',
+    		'before_title'  => '<h2>',
+    		'after_title'   => '</h2>'
+    	));
+    }
+
     register_nav_menus( array(
-        'main' => 'Main nav'
+        'main' => 'Main nav',
+        'footernav' => 'Footer nav',
+        'pagenav' => 'Page Nav',
+        'toplinks' => 'Top Links'
 
         ) );
 
@@ -116,7 +156,7 @@
     function woocommerce_custom_product_category(){
         global $post;
         global $product;
-        global $jckqv;        
+        global $jckqv;
 
 
         $size = 'shop_catalog';
@@ -148,12 +188,12 @@
             $closing_container = '</div>';
             $images = $opening_container . $img_tags . $closing_container;
 
-            
+
             echo($images);
             if(!empty($jckqv)){
-                echo($jckqv->displayBtn($post->ID));    
+                echo($jckqv->displayBtn($post->ID));
             }
-            
+
 
         }elseif(has_post_thumbnail()){
              $attrs = array(
@@ -165,7 +205,7 @@
             );
             echo (get_the_post_thumbnail( $post->ID, $size, $attrs));
             if(!empty($jckqv)){
-                echo($jckqv->displayBtn($post->ID));    
+                echo($jckqv->displayBtn($post->ID));
             }
         }
         elseif ( wc_placeholder_img_src() )
