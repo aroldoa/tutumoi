@@ -1,10 +1,11 @@
 <?php get_header(); ?>
 
-<div class="col-lg-3">
+<div class="container">
+<div class="col-sm-3">
 <?php get_sidebar('page'); ?>
 </div>
 
-<div class="col-lg-9 page">
+<div class="col-sm-9 page">
 	<div class="breadcrumbs"></div>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -22,6 +23,6 @@
 			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 	<?php endwhile; endif; ?>
 </div>
-
+</div>
 
 <?php get_footer(); ?>
