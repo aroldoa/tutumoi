@@ -64,14 +64,6 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
         	speed: 'fast'
     	});
 
-		// var navLi = $('nav li').children('ul').hide().end();
-
-		// navLi.hover(function(){
-		// 	$(this).find('> ul').stop(true, true).slideDown(250);
-		// },function(){
-		// 	$(this).find('> ul').stop(true, true).hide();
-		// });
-
 		//hover over swap
 		$('.overlay').hover(
 			function(){
@@ -101,6 +93,19 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 		$('.bxslider').bxSlider({
 		 	pagerCustom: '#bx-pager'
 		});
+
+		$quickview = $('.jckqvBtn');
+		$quickview.css('display', 'none');
+
+		$('.col-sm-4').hover(
+			function(){
+				$parent_div = $(this);
+				$parent_div.find('.jckqvBtn').stop(true,true).fadeIn(200);
+			},
+			function(){
+				$parent_div.find('.jckqvBtn').stop(true,true).fadeOut(200);
+			}
+		);
 
 
 	})();

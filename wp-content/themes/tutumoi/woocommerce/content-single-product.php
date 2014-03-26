@@ -71,7 +71,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
 	</div><!-- .summary -->
-
+<div class="col-sm-1 row previously-viewed">
+		<?php the_widget( 'WC_Widget_Recently_Viewed','title=Recently Viewed&number=3', '' ); ?>
+	</div>
 <div class="clear"></div>
 <div class="prod-upsell">
 	<?php
@@ -89,9 +91,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 
 
-	<div class="col-sm-1 row previously-viewed">
-		asf
-	</div>
+	
 
 
 </div><!-- #product-<?php the_ID(); ?> -->
