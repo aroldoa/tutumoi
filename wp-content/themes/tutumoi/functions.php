@@ -214,6 +214,26 @@
 
     add_action( 'woo_custom_product_category', 'woocommerce_custom_product_category' );
 
+//*************************************************************************************************************************
+    function woocommerce_custom_featured(){
+        global $post;
+        global $product;
+
+        $size = 'shop_catalog';
+
+        if(has_post_thumbnail()){
+             $attrs = array(
+                'class' => "img-responsive",
+                'alt'   => @trim(strip_tags( $attachment->post_excerpt )),
+                'title' => @trim(strip_tags( $attachment->post_title ))
+            );
+
+            return get_the_post_thumbnail( $post->ID, $size, $attrs);
+            
+        }
+        elseif ( wc_placeholder_img_src() )
+            echo (wc_placeholder_img( $size ));
+    }
 
 // ************************************************************************************************************************
     // custom price html tags

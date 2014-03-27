@@ -95,28 +95,17 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
         	speed: 'fast'
     	});
 
-		//hover over swap (not used due to conflict with quickview)
-		// $('.overlay').hover(
-		// 	function(){
-		// 		$div = $(this);
-		// 		$div.find('#product_category_image_0').stop(true, true).fadeTo(100,0);
-		// 		$div.find('#product_category_image_1').stop(true, true).fadeIn(200);
-		// 	},
-		// 	function(){
-		// 		$div.find('#product_category_image_1').stop(true, true).fadeOut(100);
-		// 		$div.find('#product_category_image_0').stop(true, true).fadeTo(200,1);
-		// 	}
-		// );
-
 		//single product tabs
 		$('.panel').css('display','none');
 
 		// Eexplanation:
 		// 	After saving the element that we are looking for, we need to slide it down so it appears. Afer this we need to go up to its parent element and select all of it's uncles (or its parents siblings).
-		// 	Then we look fot their children (the element's cousins, aka all other elements with the class of panel) and then slide those up.
+		// 	Then we look fot their children (the element's cousins, aka all other elements with the class of panel) and then slide those up. We then go to its parent and look for the child with the title class and
+		//  remove the JS helper class
 		$('.tabs').on('click','li',function(){
-			$details = $(this).find('.panel');
-			$details.slideDown(200).parent().siblings().find('.panel').slideUp(200);
+			$details = $(this);
+			$details.find('.title').addClass('JS');
+			$details.find('.panel').slideDown(200).parent().siblings().find('.panel').slideUp(200).parent().find('.title').removeClass('JS');
 		});
 
 
@@ -128,19 +117,19 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 		$quickview = $('.jckqvBtn');
 		$quickview.css('opacity', 0);
 
-		$('.col-sm-4').hover(
+		$('.col-sm-4 a').hover(
 			function(){
 					$parent_div = $(this);
-					$parent_div.find('.jckqvBtn').animate({
+					$parent_div.find('.jckqvBtn').stop(true,true).animate({
 						opacity: .9,
-						top: "35%"
+						top: "20%"
 					},200);
 			},
 			function(){
 					$parent_div = $(this);
-					$parent_div.find('.jckqvBtn').animate({
+					$parent_div.find('.jckqvBtn').stop(true,true).animate({
 						opacity: 0,
-						top: "40%"
+						top: "25%"
 					},200);;
 			}
 		);
