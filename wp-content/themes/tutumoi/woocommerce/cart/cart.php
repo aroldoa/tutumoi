@@ -114,19 +114,22 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 				<?php if ( WC()->cart->coupons_enabled() ) { ?>
 					<div class="coupon">
+						<div class="col-lg-7 couponarea">
+						<label for="coupon_code"><?php _e( 'Coupon', 'woocommerce' ); ?>:</label><input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php _e( 'Coupon code', 'woocommerce' ); ?>" /><input type="submit" class="button" name="apply_coupon" value="<?php _e( 'Apply Coupon', 'woocommerce' ); ?>" />
+							<?php do_action('woocommerce_cart_coupon'); ?>
 
-						<label for="coupon_code"><?php _e( 'Coupon', 'woocommerce' ); ?>:</label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php _e( 'Coupon code', 'woocommerce' ); ?>" /> <input type="submit" class="button" name="apply_coupon" value="<?php _e( 'Apply Coupon', 'woocommerce' ); ?>" />
+										<?php } ?>
+						</div>
 
-						<?php do_action('woocommerce_cart_coupon'); ?>
+						<div class="col-lg-5 checkoutbtns">
 
-					</div>
-				<?php } ?>
 
-				<input type="submit" class="button" name="update_cart" value="<?php _e( 'Update Cart', 'woocommerce' ); ?>" /> <input type="submit" class="checkout-button button alt wc-forward" name="proceed" value="<?php _e( 'Proceed to Checkout', 'woocommerce' ); ?>" />
-
-				<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
+				<input type="submit" class="button" name="update_cart" value="<?php _e( 'Update Cart', 'woocommerce' ); ?>" /> <input type="submit" class="checkout-button button alt wc-forward" name="proceed" value="<?php _e( 'Proceed to Checkout', 'woocommerce' ); ?>" /><?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
 
 				<?php wp_nonce_field( 'woocommerce-cart' ); ?>
+</div>
+					</div>
+
 			</td>
 		</tr>
 
@@ -137,15 +140,16 @@ do_action( 'woocommerce_before_cart' ); ?>
 <?php do_action( 'woocommerce_after_cart_table' ); ?>
 
 </form>
-
+<div class="clear"></div>
 <div class="cart-collaterals">
 
-	<?php do_action( 'woocommerce_cart_collaterals' ); ?>
-
-	<?php woocommerce_cart_totals(); ?>
-
-	<?php woocommerce_shipping_calculator(); ?>
-
+<div class="col-lg-8">
+		<?php woocommerce_shipping_calculator(); ?>
 </div>
-
+<div class="col-lg-4 row">
+	<?php do_action( 'woocommerce_cart_collaterals' ); ?>
+	<?php woocommerce_cart_totals(); ?>
+</div>
+</div>
+<div class="clear"></div>
 <?php do_action( 'woocommerce_after_cart' ); ?>

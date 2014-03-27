@@ -26,7 +26,7 @@ body{background-color: #79b725; font-family: 'Scada', sans-serif;}
 .top-links ul li.cart a:after{content: "\e079"; font-size: 16px; color: #aeaeae; font-family: 'ElegantIcons'; padding: 0px 0px 0px 4px; margin: 0px; }
 .logoarea{padding: 0px 0px; min-height: 80px; text-align: center;}
 header{margin: 0px 0px 0px 0px; padding: 0px;}
-.menu{border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6; max-height:40px; margin-bottom: 20px;}
+.menu{border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6; max-height:50px; margin-bottom: 40px;}
 /*nav ul li{display: inline; margin: 0px 25px; padding: 0px; color: #9b9b9b; font-size: 13px;}*/
 nav ul{padding:0px;}
 nav ul li{ padding: 0px; color: #9b9b9b; font-size: 13px;}
@@ -52,6 +52,7 @@ ul#footermenu li a:hover{color: #ec008c;}
 .widget_recent_entries ul li{display: block; margin: 0px 0px 10px 0px; padding: 0px 0px 5px 0px; font-size: 13px;}
 .widget_recent_entries ul li a{color: #969696; text-decoration: none;}
 .widget_recent_entries ul li span{display: block; color: #79b725 !important; font-size: 11px; text-transform: uppercase; line-height: 32px;}
+.widget_recent_entries ul li:before{display: none;}
 .widget_recent_entries ul li a:hover{color: #ec008c;}
 .breadcrumbs nav{text-align: left;}
 /*-----------------------------------------------------------
@@ -83,10 +84,13 @@ h2 span{background-color: #fff; margin: 0px; padding: 0px 20px; }
 	Start of Sidebar Area
 ----------------------------------------------------------*/
 .widget{margin-bottom: 40px;}
-.widget h2{font-size: 16px; color: #ec008c; text-transform: uppercase; font-weight: lighter; border-bottom: 1px solid #ededed; line-height: 32px;}
-.widget ul{margin: 20px 0px 0px 30px; padding: 0px; display: block;}
+.widget h2{font-size: 16px; color: #ec008c; text-transform: uppercase; font-weight: lighter; border-bottom: 1px solid #ededed; line-height: 32px; margin: 0px; padding: 0px;}
+.widget h2:before{background-image: url('images/flower.png'); background-repeat: no-repeat; background-position: 0 10px; width: 30px; height: 34px; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px !important; display: inline-block;  content: " ";}
+.widget ul{margin: 20px 0px 0px 0px; padding: 0px; display: block;}
 .widget ul li{margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; list-style-type: none; border-bottom: 1px solid #ededed;}
-.widget ul li a{color: #777777;}
+.widget ul li:before{ content: "\35"; font-family: 'ElegantIcons';  margin: 0px; padding: 0px 10px 0px 0px; font-size: 14px; color: #ec008c;}
+.widget ul li a{color: #777777; text-decoration: none;}
+.widget ul li a:hover{color: #ec008c; text-decoration: none;}
 /*-----------------------------------------------------------
 	Start of WooCommerce Pages
 ----------------------------------------------------------*/
@@ -116,8 +120,11 @@ table.variations label{color: #222; font-size: 12px;}
 ul.tabs{margin: 0px; padding: 0px; display: block;}
 ul.tabs li{text-align: left; display: block; margin: 0px 0px 5px 0px; padding: 0px 0px 5px 0px; border-bottom: 1px solid #e9e9e9;}
 ul.tabs li .panel p{margin-top: 20px;}
-.additional_information_tab table{width: 100%; line-height: 30px;
-}
+.additional_information_tab table{width: 100%; line-height: 30px;}
+.coupon{margin: 20px 0px 90px 0px; text-align: left;}
+.coupon label{float: left; margin: 0px 20px 0px 0px;}
+.coupon input{float: left; display: inline; width: 180px; margin: 0px 0px 0px 10px;}
+.checkoutbtns input{float: right;}
 } /* END screen media */
 
 

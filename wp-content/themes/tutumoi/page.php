@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container">
+
 <div class="col-sm-3">
 <?php get_sidebar('page'); ?>
 </div>
@@ -23,6 +24,6 @@
 			<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 	<?php endwhile; endif; ?>
 </div>
-</div>
 
+</div>
 <?php get_footer(); ?>
