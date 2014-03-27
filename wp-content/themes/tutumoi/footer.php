@@ -114,25 +114,25 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 		 	pagerCustom: '#bx-pager'
 		});
 
-		$quickview = $('.jckqvBtn');
-		$quickview.css('opacity', 0);
+		// $quickview = $('.jckqvBtn');
+		// $quickview.css('opacity', 0);
 
-		$('.col-sm-4 a').hover(
-			function(){
-					$parent_div = $(this);
-					$parent_div.find('.jckqvBtn').stop(true,true).animate({
-						opacity: .9,
-						top: "20%"
-					},200);
-			},
-			function(){
-					$parent_div = $(this);
-					$parent_div.find('.jckqvBtn').stop(true,true).animate({
-						opacity: 0,
-						top: "25%"
-					},200);;
-			}
-		);
+		// $('.col-sm-4 a').hover(
+		// 	function(){
+		// 			$parent_div = $(this);
+		// 			$parent_div.find('.jckqvBtn').stop(true,true).animate({
+		// 				opacity: .9,
+		// 				top: "20%"
+		// 			},200);
+		// 	},
+		// 	function(){
+		// 			$parent_div = $(this);
+		// 			$parent_div.find('.jckqvBtn').stop(true,true).animate({
+		// 				opacity: 0,
+		// 				top: "25%"
+		// 			},200);;
+		// 	}
+		// );
 
 
 	})();
