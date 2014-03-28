@@ -134,6 +134,15 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 		// 	}
 		// );
 
+    	// $('.color_leaves').on('click', function(){
+    	// 	var content;
+    	// 	$leaves = $(this);
+    	// 	content = '<select style="display:none" id="pa_color" name="attribute_pa_color"><option value="' + $leaves.val() + '" selected="selected">' + $leaves.val() + '</option></select>';
+    	// 	$leaves.append(content);
+    	// 	$leaves.siblings().find('select').remove();
+    	// 	$leaves.find('select').siblings('select[name=attribute_pa_color]').remove();
+
+    	// });
 
 	})();
     </script>
