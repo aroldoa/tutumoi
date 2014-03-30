@@ -27,7 +27,7 @@ body{background-color: #79b725; font-family: 'Scada', sans-serif;}
 .top-links ul li.cart a:after{content: "\e079"; font-size: 16px; color: #aeaeae; font-family: 'ElegantIcons'; padding: 0px 0px 0px 4px; margin: 0px; }
 .logoarea{padding: 0px 0px; min-height: 80px; text-align: center;}
 header{margin: 0px 0px 0px 0px; padding: 0px;}
-.menu{border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6; max-height:50px; margin-bottom: 40px;}
+.menu{border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6; max-height:50px; margin-bottom: 25px;}
 /*nav ul li{display: inline; margin: 0px 25px; padding: 0px; color: #9b9b9b; font-size: 13px;}*/
 nav ul{padding:0px;}
 nav ul li{ padding: 0px; color: #9b9b9b; font-size: 13px;}
@@ -55,7 +55,7 @@ ul#footermenu li a:hover{color: #ec008c;}
 .widget_recent_entries ul li span{display: block; color: #79b725 !important; font-size: 11px; text-transform: uppercase; line-height: 32px;}
 .widget_recent_entries ul li:before{display: none;}
 .widget_recent_entries ul li a:hover{color: #ec008c;}
-.breadcrumbs nav{text-align: left;}
+
 /*-----------------------------------------------------------
 	Start of Home Page
 ----------------------------------------------------------*/
@@ -112,7 +112,8 @@ table.variations{text-align: left;}
 .single_add_to_cart_button{background-color: #ec008c; color: #fff; border: none; padding: 12px 40px; margin-top: 10px; margin-bottom: 10px; border-radius: 3px;}
 .single_add_to_cart_button:hover{background-color: #934c9e;}
 .breadcrumbs a{color: #934c9e;}
-.breadcrumbs nav{ color: #bebebe;}
+.breadcrumbs{margin-bottom: 25px;}
+.breadcrumbs nav{ color: #bebebe; padding-left: 20px;}
 .images{text-align:left; margin: 0px; padding: 0px;}
 .summary{ margin: 0px; padding: 0px;}
 .variations_form{text-align:left; color: #222; font-size: 13px; margin-bottom: 15px;}
@@ -135,6 +136,11 @@ ul.tabs li .panel p{margin-top: 20px;}
 .checkout select, option{width: 350px !important;}
 .field{background-color: #f1f1f1; height: 30px; width: 260px; border: none; margin-bottom: 15px; text-indent: 5px;}
 .btn{padding: 8px 20px; background-color: #8dc63f; font-size: 12px; color: #fff; border: none; border-radius: 3px; }
+
+/* BX Slider Styles  -------------------
+---------------------------------------- */
+.bx-viewport{border: none !important; background: none !important; -moz-box-shadow: 0 0 5px #ccc !important; -webkit-box-shadow: 0 0 5px #ccc !important; box-shadow: 0 0 5px #ccc !important; left: 0 !important;}
+.bx-wrapper{margin-bottom: 20px !important;}
 
 } /* END screen media */
 @media print {
@@ -166,32 +172,25 @@ a { text-decoration: none; color: black; }
 }
 #product_category_image_1{
     display: none;
-    position:absolute;
+    position:relative;
     top:0;
     left:0;
     right:0;
     bottom:0;
 }
 
-.product{
-    padding-left:25px;
-    margin-left:10px;
-}
-.images{
-    float:left;
-}
+
 .related{
     clear:both;
 }
-.summary{
-    margin-left: 50px;
-}
 .thumbnails{
     margin-bottom: 50px;
+
 }
+.thumbnails a{    padding: 0px 15px 0px 0px !important;}
 /*quickview styling on category page*/
 .jckqvBtn{
-    position: absolute !important;
+    position: relative;
     top: 35%;
     left:30%;
     padding: 10px 15px !important;
@@ -199,6 +198,7 @@ a { text-decoration: none; color: black; }
     background-color: #A973B1 !important;
     font-size: 16px;
     text-transform:uppercase;
+
 
     /* useful if you don't want a bg color from leaking outside the border: */
     background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
@@ -208,6 +208,7 @@ a { text-decoration: none; color: black; }
 
 .col-sm-4 a{
     text-decoration: none;
+
 }
 
 

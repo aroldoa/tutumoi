@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $post, $woocommerce, $product;
 
 ?>
-<div class="col-sm-5 images row">
+<div class="col-sm-5">
 	<ul class="bxslider">
 
 	<?php
@@ -49,7 +49,7 @@ global $post, $woocommerce, $product;
 		}
 	?>
 	</ul>
-	
+
 	<?php		do_action( 'woocommerce_product_thumbnails' ); ?>
 
 </div>
