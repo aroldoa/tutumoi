@@ -276,4 +276,8 @@
     }
     add_filter( 'woocommerce_related_products_args', 'woo_related_products_limit' );
 
+    //********************************************************************************************************************
+    // woocommerce pagination
+    add_filter('loop_shop_per_page', create_function('$cols', 'return 18;'));
+
 ?>
