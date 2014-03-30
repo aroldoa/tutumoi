@@ -67,6 +67,11 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 		</div>
 		<div class="col-sm-3">
 		    <h5>Join Our Newsletter</h5>
+		    <form>
+				<input class="field" type="text" value="" name="firstname"/>
+				<input class="field" type="text" value="" name="lastname"/>
+				<input class="btn" type="submit" value="Submit" name="submit" />
+			</form>
 		</div>
 	 </footer>
 	 <div class="copyright">

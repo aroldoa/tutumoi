@@ -47,7 +47,7 @@ footer h5{font-family: 'Ubuntu', sans-serif; font-size: 18px; color: #8e73b0; fo
 ul#footermenu{ margin: 0px 0px 0px 10px; padding: 0px;}
 ul#footermenu li{ display: block; font-size: 13px; margin: 0px 0px 10px 0px; padding: 0px; font-weight: lighter;}
 ul#footermenu li a{ color: #969696; text-decoration: none;}
-ul#footermenu li a:before{content: "\24"; font-size: 16px; color: #79b725; font-family: 'ElegantIcons'; padding: 0px 10px 0px 0px; margin: 0px;}
+ul#footermenu li a:before{content: "\24"; font-size: 16px; color: #ec008c; font-family: 'ElegantIcons'; padding: 0px 10px 0px 0px; margin: 0px;}
 ul#footermenu li a:hover{color: #ec008c;}
 .widget_recent_entries ul{margin: 0px !important; padding: 0px !important;}
 .widget_recent_entries ul li{display: block; margin: 0px 0px 10px 0px; padding: 0px 0px 5px 0px; font-size: 13px;}
@@ -71,7 +71,7 @@ h2 span{background-color: #fff; margin: 0px; padding: 0px 20px; }
 #sidebar h2{color: #ec008c; font-weight: 500 !important;}
 .page h2{font-size: 28px; font-family: 'Dosis', sans-serif;  color: #ec008c; border: none; line-height: 28px; margin-bottom: 20px; margin-top: 0px;}
 .page h2 a{font-size: 28px; font-family: 'Dosis', sans-serif;  color: #ec008c; border: none; text-decoration: none; line-height: 28px; margin-bottom: 20px; margin-top: 0px;}
-.page{padding: 15px 0px 0px 0px;}
+.page{padding: 15px 0px 0px 20px;}
 .page p{line-height: 21px; font-size: 13px; margin-bottom: 20px;}
 /*-----------------------------------------------------------
 	Start of Product Category Page
@@ -133,6 +133,8 @@ ul.tabs li .panel p{margin-top: 20px;}
 .checkout input{width:350px;}
 .checkout{margin: 0px; padding: 0px;}
 .checkout select, option{width: 350px !important;}
+.field{background-color: #f1f1f1; height: 30px; width: 260px; border: none; margin-bottom: 15px; text-indent: 5px;}
+.btn{padding: 8px 20px; background-color: #8dc63f; font-size: 12px; color: #fff; border: none; border-radius: 3px; }
 
 } /* END screen media */
 @media print {

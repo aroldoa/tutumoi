@@ -6,7 +6,7 @@
 <?php get_sidebar('page'); ?>
 </div>
 
-<div class="col-sm-9 page">
+<div class="col-sm-8 page">
 	<div class="breadcrumbs"></div>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
