@@ -23,7 +23,7 @@ global $woocommerce, $product, $post;
 						<td class="value">
 							
 								<?php if ($name == 'pa_color'){?>
-									 <div name="attribute_<?php echo sanitize_title( $name ); ?>">
+									 <div id="leaves_container" name="attribute_<?php echo sanitize_title( $name ); ?>">
 									
 									<?php }else{?>
 								
@@ -67,7 +67,8 @@ global $woocommerce, $product, $post;
 												continue;
 
 											if($name == 'pa_color'){
-												echo '<button type="button" class="color_leaves" value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $selected_value ), sanitize_title( $term->slug ), false ) . '>' . apply_filters( 'woocommerce_variation_option_name', $term->name ) . '</button>';
+												// echo '<button type="button" class="color_leaves" style="background-color:' . esc_attr( $term->slug ) . ' " value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $selected_value ), sanitize_title( $term->slug ), false ) . '>' . apply_filters( 'woocommerce_variation_option_name', $term->name ) . '</button>';
+												echo '<button type="button" class="color_leaves" style="background-color:' . esc_attr( $term->slug ) . ' " value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $selected_value ), sanitize_title( $term->slug ), false ) . '></button>';
 												
 											}else{
 												echo '<option value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $selected_value ), sanitize_title( $term->slug ), false ) . '>' . apply_filters( 'woocommerce_variation_option_name', $term->name ) . '</option>';
@@ -130,6 +131,7 @@ global $woocommerce, $product, $post;
 	$('.color_leaves').on('click', function(){
     		var content;
     		$leaves = $(this);
+    		$leaves.css("border","1px solid black").siblings().css("border","");
     		content = '<select style="display:none" id="pa_color" name="attribute_pa_color"><option value="' + $leaves.val() + '" selected="selected">' + $leaves.val() + '</option></select>';
     		$leaves.append(content);
     		$leaves.siblings().find('select').remove();
