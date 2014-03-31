@@ -33,32 +33,15 @@ get_header(); ?>
 				    
 
 				    if( ($i % 5) == 3 ){
-						echo '<div class="col-sm-4">';
-						echo '<a href="'.get_permalink().'">' . woocommerce_custom_featured();
-						if(!empty($jckqv)){
-			                echo($jckqv->displayBtn($post->ID));
-			            }
-			            echo '</a>';
-						echo '</div>';
+						echo '<div class="col-sm-4"><a href="'.get_permalink().'">' . woocommerce_custom_featured() . '</a></div>';
 				    }
 				    //positions 1 and 3
 				    elseif((($i % 5) == 1) || (($i % 5) == 4)){
-				    	echo '<div class="col-sm-4">';
-				    	echo '<a href="'.get_permalink().'">' . woocommerce_custom_featured();
-				    	if(!empty($jckqv)){
-			                echo($jckqv->displayBtn($post->ID));
-			            }
-			            echo '</a>';
+				    	echo '<div class="col-sm-4"><a href="'.get_permalink().'">' . woocommerce_custom_featured() . '</a>';
 				    }
 				    //positions 2 and 5
 				    elseif((($i % 5) == 2) || (($i % 5) == 0)){
-				    	echo '<a href="'.get_permalink().'">' . woocommerce_custom_featured();
-				    	if(!empty($jckqv)){
-			                echo($jckqv->displayBtn($post->ID));
-			            }
-			            echo '</a>';
-				    	echo '</div>';
-
+				    	echo '<a href="'.get_permalink().'">' . woocommerce_custom_featured() . '</a></div>';
 				    }
 				    
 				    $i++;

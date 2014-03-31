@@ -67,11 +67,12 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 		</div>
 		<div class="col-sm-3">
 		    <h5>Join Our Newsletter</h5>
-		    <form>
+   		    <form>
 				<input class="field" type="text" value="" name="firstname"/>
 				<input class="field" type="text" value="" name="lastname"/>
 				<input class="btn" type="submit" value="Submit" name="submit" />
 			</form>
+
 		</div>
 	 </footer>
 	 <div class="copyright">
@@ -119,35 +120,25 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 		 	pagerCustom: '#bx-pager'
 		});
 
-		// $quickview = $('.jckqvBtn');
-		// $quickview.css('opacity', 0);
+		$quickview = $('.jckqvBtn');
+		$quickview.css('opacity', 0);
 
-		// $('.col-sm-4 a').hover(
-		// 	function(){
-		// 			$parent_div = $(this);
-		// 			$parent_div.find('.jckqvBtn').stop(true,true).animate({
-		// 				opacity: .9,
-		// 				top: "20%"
-		// 			},200);
-		// 	},
-		// 	function(){
-		// 			$parent_div = $(this);
-		// 			$parent_div.find('.jckqvBtn').stop(true,true).animate({
-		// 				opacity: 0,
-		// 				top: "25%"
-		// 			},200);;
-		// 	}
-		// );
-
-    	// $('.color_leaves').on('click', function(){
-    	// 	var content;
-    	// 	$leaves = $(this);
-    	// 	content = '<select style="display:none" id="pa_color" name="attribute_pa_color"><option value="' + $leaves.val() + '" selected="selected">' + $leaves.val() + '</option></select>';
-    	// 	$leaves.append(content);
-    	// 	$leaves.siblings().find('select').remove();
-    	// 	$leaves.find('select').siblings('select[name=attribute_pa_color]').remove();
-
-    	// });
+		$('.col-sm-3 a').hover(
+			function(){
+					$parent_div = $(this);
+					$parent_div.find('.jckqvBtn').stop(true,true).animate({
+						opacity: .9,
+						top: "35%"
+					},200);
+			},
+			function(){
+					$parent_div = $(this);
+					$parent_div.find('.jckqvBtn').stop(true,true).animate({
+						opacity: 0,
+						top: "25%"
+					},200);;
+			}
+		);
 
 	})();
     </script>
