@@ -68,7 +68,7 @@ global $woocommerce, $product, $post;
 
 											if($name == 'pa_color'){
 												// echo '<button type="button" class="color_leaves" style="background-color:' . esc_attr( $term->slug ) . ' " value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $selected_value ), sanitize_title( $term->slug ), false ) . '>' . apply_filters( 'woocommerce_variation_option_name', $term->name ) . '</button>';
-												echo '<button type="button" class="color_leaves" style="background-color:' . esc_attr( $term->slug ) . ' " value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $selected_value ), sanitize_title( $term->slug ), false ) . '></button>';
+												echo '<button type="button" class="color_leaves" style="background-image: url(\'../../../wp-content/themes/tutumoi/images/' . esc_attr( $term->slug ) . '.png\') " value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $selected_value ), sanitize_title( $term->slug ), false ) . '></button>';
 												
 											}else{
 												echo '<option value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $selected_value ), sanitize_title( $term->slug ), false ) . '>' . apply_filters( 'woocommerce_variation_option_name', $term->name ) . '</option>';
