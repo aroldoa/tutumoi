@@ -37,6 +37,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,200' rel='stylesheet' type='text/css'>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
@@ -113,7 +114,7 @@
 
 		<?php wp_nav_menu( $defaults );?>
 
-		
+
 	<?php
 	add_filter( 'wp_nav_menu_objects', 'add_menu_parent_class' );
 	function add_menu_parent_class( $items ) {

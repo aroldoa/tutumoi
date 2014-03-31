@@ -73,6 +73,8 @@ h2 span{background-color: #fff; margin: 0px; padding: 0px 20px; }
 .page h2 a{font-size: 28px; font-family: 'Dosis', sans-serif;  color: #ec008c; border: none; text-decoration: none; line-height: 28px; margin-bottom: 20px; margin-top: 0px;}
 .page{padding: 15px 0px 0px 20px;}
 .page p{line-height: 21px; font-size: 13px; margin-bottom: 20px;}
+h3{font-family: 'Titillium Web', sans-serif !important; font-size: 21px; text-decoration: none; font-weight: 400; color: #8dc63f;}
+
 /*-----------------------------------------------------------
 	Start of Product Category Page
 ----------------------------------------------------------*/
@@ -125,7 +127,7 @@ ul.tabs li{text-align: left; display: block; margin: 0px 0px 5px 0px; padding: 0
 ul.tabs li .panel p{margin-top: 20px;}
 .additional_information_tab table{width: 100%; line-height: 30px;}
 .coupon{margin: 20px 0px 90px 0px; text-align: left;}
-.coupon label{float: left; margin: 0px 20px 0px 0px;}
+.coupon label{float: left; margin: 0px 20px 0px 0px; font-weight: lighter !important;}
 .coupon input{float: left; display: inline; width: 180px; margin: 0px 0px 0px 10px;}
 .checkoutbtns input{float: right;}
 .shipping-calculator-form input{width: 220px;}
@@ -148,6 +150,8 @@ ul.tabs li .panel p{margin-top: 20px;}
 .widget_recently_viewed_products h2{font-size: 11px;}
 .widget_recently_viewed_products h2:before{display: none;}
 .widget_recently_viewed_products a{ word-wrap: break-word;}
+
+
 
 /*.widget_recently_viewed_products ul {display:block !important;  }
 
