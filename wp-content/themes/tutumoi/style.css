@@ -217,7 +217,11 @@ a { text-decoration: none; color: black; }
 
 }
 .thumbnails a{    padding: 0px 15px 0px 0px !important;}
-/*quickview styling on category page*/
+
+/*quickview styling*/
+.quickview_parent:hover{
+    text-decoration: none;
+}
 .jckqvBtn{
     position: absolute !important;
     top: 35%;
