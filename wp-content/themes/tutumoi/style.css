@@ -187,7 +187,11 @@ tr { page-break-inside: avoid; }
 a { text-decoration: none; color: black; }
 } /* END print media */
 
-
+.home_featured{
+    height:203px;
+    display:inline-block;
+    overflow:hidden;
+}
 .overlay{
     position:relative;
 }
