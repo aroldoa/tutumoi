@@ -33,7 +33,7 @@ global $post, $woocommerce, $product;
 				foreach ( $attachment_ids as $attachment_id ) {
 					$image_link 	= wp_get_attachment_url( $attachment_id );
 					$image_title 	= esc_attr( get_the_title( $attachment_id ) );
-					$image       	= wp_get_attachment_image( $attachment_id,  apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ), array(
+					$image       	= wp_get_attachment_image( $attachment_id,  apply_filters( 'single_product_large_thumbnail_size', 'shop_single' ), false, array(
 						'title' => $image_title,
 						'class'	=> "img-responsive"
 						) );

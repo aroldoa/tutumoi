@@ -39,7 +39,13 @@ if ( $products->have_posts() ) : ?>
 
 			<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 
-				<?php wc_get_template_part( 'content', 'product' ); ?>
+				<?php
+				// commented because of div conflict
+				//wc_get_template_part( 'content', 'product' ); 
+
+				//custom template where parent div is the only thing different
+				wc_get_template_part( 'content', 'product-related' ); 
+				?>
 
 			<?php endwhile; // end of the loop. ?>
 
