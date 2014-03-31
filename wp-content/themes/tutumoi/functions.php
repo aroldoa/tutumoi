@@ -191,7 +191,7 @@
 
         //     echo($images);
         //     if(!empty($jckqv)){
-        //         echo($jckqv->displayBtn($post->ID));    
+        //         echo($jckqv->displayBtn($post->ID));
         //     }
 
 
@@ -229,7 +229,7 @@
             );
 
             return get_the_post_thumbnail( $post->ID, $size, $attrs);
-            
+
         }
         elseif ( wc_placeholder_img_src() )
             echo (wc_placeholder_img( $size ));

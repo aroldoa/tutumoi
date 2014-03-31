@@ -71,7 +71,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 
 	</div><!-- .summary -->
-<div class="col-sm-2 previously-viewed">
+	<div class="col-sm-2 previously-viewed">
 		<?php the_widget( 'WC_Widget_Recently_Viewed','title=Recently Viewed&number=3', '' ); ?>
 	</div>
 <div class="clear"></div>

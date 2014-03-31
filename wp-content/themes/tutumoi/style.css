@@ -137,6 +137,27 @@ ul.tabs li .panel p{margin-top: 20px;}
 .field{background-color: #f1f1f1; height: 30px; width: 260px; border: none; margin-bottom: 15px; text-indent: 5px;}
 .btn{padding: 8px 20px; background-color: #8dc63f; font-size: 12px; color: #fff; border: none; border-radius: 3px; }
 
+.widget_recently_viewed_products ul li{text-align: left !important;}
+.widget_recently_viewed_products ul li a{text-align: left !important;}
+.widget_recently_viewed_products ul.product_list_widget{padding: 0px 0px 0px 12px !important;}
+.widget_recently_viewed_products{margin: 0px; padding: 0px; text-align: center;}
+.widget_recently_viewed_products ul li{display: inline-block !important; list-style-type: none !important; text-align: center;}
+.widget_recently_viewed_products ul li:before{display: none !important;}
+.widget_recently_viewed_products ul li img{display: block;}
+.widget_recently_viewed_products ul li span{display: block;}
+.widget_recently_viewed_products h2{font-size: 11px;}
+.widget_recently_viewed_products h2:before{display: none;}
+.widget_recently_viewed_products a{ word-wrap: break-word;}
+
+/*.widget_recently_viewed_products ul {display:block !important;  }
+
+.widget_recently_viewed_products ul li:before{display: none !important;}
+
+
+
+
+
+
 /* BX Slider Styles  -------------------
 ---------------------------------------- */
 .bx-viewport{border: none !important; background: none !important; -moz-box-shadow: 0 0 5px #ccc !important; -webkit-box-shadow: 0 0 5px #ccc !important; box-shadow: 0 0 5px #ccc !important; left: 0 !important;}
