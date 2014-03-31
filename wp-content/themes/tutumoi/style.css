@@ -211,9 +211,9 @@ a { text-decoration: none; color: black; }
 .thumbnails a{    padding: 0px 15px 0px 0px !important;}
 /*quickview styling on category page*/
 .jckqvBtn{
-    position: relative;
+    position: absolute !important;
     top: 35%;
-    left:30%;
+    left:27%;
     padding: 10px 15px !important;
     opacity:.9;
     background-color: #A973B1 !important;

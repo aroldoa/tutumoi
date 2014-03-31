@@ -122,6 +122,7 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 
 		$quickview = $('.jckqvBtn');
 		$quickview.css('opacity', 0);
+		$quickview.css('top','45%');
 
 		$('.col-sm-3 a').hover(
 			function(){
@@ -135,7 +136,7 @@ you stand out from the crowd!</a> <span>1.31.2014</span></li>
 					$parent_div = $(this);
 					$parent_div.find('.jckqvBtn').stop(true,true).animate({
 						opacity: 0,
-						top: "25%"
+						top: "45%"
 					},200);;
 			}
 		);
