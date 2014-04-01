@@ -215,11 +215,17 @@
     add_action( 'woo_custom_product_category', 'woocommerce_custom_product_category' );
 
 //*************************************************************************************************************************
-    function woocommerce_custom_featured(){
+    function woocommerce_custom_featured($position = null){
         global $post;
         global $product;
 
-        $size = 'shop_catalog';
+        if($position == 'middle'){
+            $size = 'shop_single';
+        }elseif($position == 'sides'){
+            $size = 'shop_single';
+        }else{
+            $size = 'shop_catalog';
+        }
 
         if(has_post_thumbnail()){
              $attrs = array(
