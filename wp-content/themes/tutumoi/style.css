@@ -13,7 +13,6 @@ Version: 1
 @import url('css/jquery.bxslider.css');
 
 @media screen {
-
 body{background-color: #79b725; font-family: 'Scada', sans-serif; background-image: url('images/main-back.png'); background-position: center top; background-repeat: no-repeat;}
 .wrap{background-color:#fff; border: 6px solid rgba(121,183,37,0.6); margin-bottom: 60px;}
 .top-links{min-height: 40px !important; background-color: #f4f4f4; margin: 0px 0px 25px 0px; padding: 0px 0px 0px 0px;}
@@ -55,7 +54,6 @@ ul#footermenu li a:hover{color: #ec008c;}
 .widget_recent_entries ul li span{display: block; color: #79b725 !important; font-size: 11px; text-transform: uppercase; line-height: 32px;}
 .widget_recent_entries ul li:before{display: none;}
 .widget_recent_entries ul li a:hover{color: #ec008c;}
-
 /*-----------------------------------------------------------
 	Start of Home Page
 ----------------------------------------------------------*/
@@ -74,9 +72,7 @@ h2 span{background-color: #fff; margin: 0px; padding: 0px 20px; }
 .page{padding: 15px 0px 0px 20px;}
 .page p{line-height: 21px; font-size: 13px; margin-bottom: 20px;}
 h3 {font-family: 'Titillium Web', sans-serif !important; font-size: 21px; text-decoration: none; font-weight: 400; color: #934c9e;}
-
 #ship-to-different-address label{font-family: 'Titillium Web', sans-serif !important; font-size: 21px !important; text-decoration: none !important; font-weight: 400 !important; color: #934c9e !important;}
-
 /*-----------------------------------------------------------
 	Start of Product Category Page
 ----------------------------------------------------------*/
@@ -168,16 +164,9 @@ table.shop_attributes th{height: 20px !important;}
 #payment label{}
 #payment p.form-row{margin: 0px 0px 10px 0px; padding: 0px;}
 table.shop_table{ line-height: 30px;}
-
-
 /*.widget_recently_viewed_products ul {display:block !important;  }
 
 .widget_recently_viewed_products ul li:before{display: none !important;}
-
-
-
-
-
 
 /* BX Slider Styles  -------------------
 ---------------------------------------- */
